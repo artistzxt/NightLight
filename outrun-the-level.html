@@ -1,0 +1,1401 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#050914">
+  <title>OUTRUN THE LEVEL</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #050914;
+      --panel: rgba(8, 15, 29, .88);
+      --panel-strong: rgba(10, 20, 38, .96);
+      --line: rgba(108, 221, 241, .2);
+      --line-strong: rgba(108, 221, 241, .55);
+      --text: #e9f4ff;
+      --muted: #7e95aa;
+      --cyan: #64e8ff;
+      --cyan-strong: #16c9e7;
+      --amber: #ffc86b;
+      --red: #ff5878;
+      --green: #7ef3bf;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; min-height: 100%; background: var(--bg); }
+
+    body {
+      overflow: hidden;
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .02em;
+    }
+
+    button { font: inherit; }
+
+    #app {
+      position: relative;
+      width: 100vw;
+      height: 100dvh;
+      min-height: 520px;
+      overflow: hidden;
+      background: #050914;
+      isolation: isolate;
+    }
+
+    #game {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      touch-action: none;
+      outline: none;
+    }
+
+    .screen {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      padding: clamp(20px, 5vw, 72px);
+      background: linear-gradient(90deg, rgba(3, 7, 16, .72), rgba(3, 7, 16, .15) 62%, rgba(3, 7, 16, .38));
+      pointer-events: auto;
+    }
+
+    .hidden { display: none !important; }
+
+    .menu-content, .result-content {
+      width: min(720px, 100%);
+      padding: clamp(24px, 4vw, 48px);
+      border: 1px solid var(--line);
+      background: linear-gradient(145deg, rgba(10, 20, 38, .93), rgba(5, 11, 24, .82));
+      box-shadow: 0 24px 80px rgba(0, 0, 0, .38), inset 0 1px 0 rgba(255, 255, 255, .035);
+      backdrop-filter: blur(18px);
+    }
+
+    .eyebrow {
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 16px 0 12px;
+      max-width: 640px;
+      font-size: clamp(44px, 9vw, 92px);
+      line-height: .88;
+      letter-spacing: -.075em;
+      font-weight: 850;
+      text-wrap: balance;
+    }
+
+    h1 span { color: var(--cyan); }
+
+    .lede {
+      max-width: 560px;
+      margin: 0;
+      color: #a7b9ca;
+      font-size: clamp(14px, 2vw, 17px);
+      line-height: 1.65;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: 30px 0 28px;
+    }
+
+    .info-tile {
+      min-height: 84px;
+      padding: 14px;
+      border: 1px solid rgba(108, 221, 241, .13);
+      background: rgba(4, 11, 23, .58);
+    }
+
+    .info-tile strong {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--cyan);
+      font-size: 10px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .info-tile span {
+      display: block;
+      color: #b9c8d6;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .action {
+      min-height: 50px;
+      padding: 0 18px;
+      border: 1px solid var(--line-strong);
+      color: var(--text);
+      background: rgba(16, 35, 55, .84);
+      cursor: pointer;
+      transition: transform .15s ease, border-color .15s ease, background .15s ease, opacity .15s ease;
+    }
+
+    .action:hover, .action:focus-visible {
+      border-color: var(--cyan);
+      background: rgba(19, 55, 77, .94);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .action.primary {
+      color: #021018;
+      border-color: var(--cyan);
+      background: var(--cyan);
+      font-weight: 850;
+    }
+
+    .action.primary:hover, .action.primary:focus-visible { background: #b4f7ff; }
+
+    .action:disabled { cursor: not-allowed; opacity: .42; transform: none; }
+
+    .action .button-meta {
+      display: block;
+      margin-top: 3px;
+      color: rgba(2, 16, 24, .62);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+
+    .action:not(.primary) .button-meta { color: var(--muted); }
+
+    .menu-foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .menu-foot strong { color: var(--text); }
+
+    .result-content { width: min(620px, 100%); }
+
+    .result-kicker {
+      color: var(--amber);
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .result-title {
+      margin: 12px 0 8px;
+      font-size: clamp(34px, 7vw, 66px);
+      line-height: .95;
+      letter-spacing: -.06em;
+    }
+
+    .result-copy {
+      min-height: 24px;
+      margin: 0 0 24px;
+      color: #a7b9ca;
+      line-height: 1.55;
+    }
+
+    .result-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .result-stat {
+      padding: 14px 12px;
+      border: 1px solid rgba(108, 221, 241, .14);
+      background: rgba(4, 11, 23, .56);
+    }
+
+    .result-stat span {
+      display: block;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .result-stat strong {
+      display: block;
+      margin-top: 7px;
+      color: var(--cyan);
+      font-size: 22px;
+    }
+
+    .result-best {
+      margin: 0 0 22px;
+      color: var(--green);
+      font-size: 12px;
+    }
+
+    .hud {
+      position: absolute;
+      inset: 0 0 auto;
+      z-index: 2;
+      padding: max(16px, env(safe-area-inset-top)) clamp(14px, 3vw, 30px) 0;
+      pointer-events: none;
+    }
+
+    .hud-top, .hud-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      color: var(--cyan);
+      font-size: 11px;
+      font-weight: 850;
+      letter-spacing: .16em;
+    }
+
+    .brand-mark span { color: #8ea3b7; }
+
+    .readouts {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: #dce9f5;
+      font-size: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .readout-label {
+      margin-right: 5px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: .12em;
+    }
+
+    .progress {
+      height: 3px;
+      margin: 12px 0 10px;
+      overflow: hidden;
+      background: rgba(129, 168, 190, .16);
+    }
+
+    .progress-fill {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, var(--cyan-strong), var(--cyan));
+      transition: width .12s linear;
+    }
+
+    .hud-bottom { align-items: flex-start; }
+
+    .status-chip, .wave-readout, .gate-readout {
+      padding: 7px 10px;
+      border: 1px solid rgba(108, 221, 241, .2);
+      color: #b8d1df;
+      background: rgba(3, 12, 24, .55);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .status-chip.inverted { color: var(--amber); border-color: rgba(255, 200, 107, .42); }
+    .wave-readout { color: #ff8ca4; border-color: rgba(255, 88, 120, .28); }
+    .gate-readout { color: var(--cyan); border-color: rgba(100, 232, 255, .34); }
+
+    #toast {
+      position: absolute;
+      left: 50%;
+      bottom: max(22px, env(safe-area-inset-bottom));
+      z-index: 4;
+      max-width: min(90vw, 420px);
+      padding: 10px 14px;
+      border: 1px solid rgba(100, 232, 255, .28);
+      color: #dff8ff;
+      background: rgba(5, 16, 28, .88);
+      font-size: 12px;
+      text-align: center;
+      transform: translate(-50%, 16px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .2s ease, transform .2s ease;
+    }
+
+    #toast.show { opacity: 1; transform: translate(-50%, 0); }
+
+    @media (max-width: 640px) {
+      #app { min-height: 480px; }
+      .screen { align-items: end; padding: 16px; padding-bottom: max(16px, env(safe-area-inset-bottom)); }
+      .menu-content, .result-content { padding: 24px 20px; }
+      h1 { font-size: clamp(42px, 15vw, 70px); }
+      .menu-grid { grid-template-columns: 1fr; gap: 6px; margin: 22px 0; }
+      .info-tile { min-height: 0; padding: 10px 12px; }
+      .info-tile strong { display: inline-block; margin: 0 8px 0 0; }
+      .info-tile span { display: inline; }
+      .action-row { display: grid; grid-template-columns: 1fr; }
+      .menu-foot { display: block; }
+      .menu-foot > span { display: block; margin-top: 8px; }
+      .result-stats { grid-template-columns: repeat(2, 1fr); }
+      .readouts { gap: 7px; }
+      .readout-label { display: none; }
+      .brand-mark { font-size: 9px; }
+      .hud-bottom { gap: 6px; }
+      .status-chip, .wave-readout, .gate-readout { padding: 6px 7px; font-size: 8px; letter-spacing: .06em; }
+    }
+
+    @media (max-height: 620px) and (min-width: 641px) {
+      .menu-content, .result-content { padding: 22px 28px; }
+      .menu-grid { margin: 18px 0; }
+      h1 { font-size: 56px; }
+    }
+  </style>
+</head>
+<body>
+  <main id="app">
+    <canvas id="game" tabindex="0" aria-label="OUTRUN THE LEVEL 游戏画布"></canvas>
+
+    <div id="hud" class="hud hidden" aria-live="polite">
+      <div class="hud-top">
+        <div class="brand-mark">OTL <span>// <span id="mode-label">MAIN RUN</span></span></div>
+        <div class="readouts">
+          <span><span class="readout-label">TIME</span><b id="time-readout">00:00</b></span>
+          <span><span class="readout-label">SCORE</span><b id="score-readout">0000</b></span>
+          <span><span class="readout-label">DIST</span><b id="distance-readout">0000</b></span>
+        </div>
+      </div>
+      <div class="progress"><div id="timer-fill" class="progress-fill"></div></div>
+      <div class="hud-bottom">
+        <div id="gravity-chip" class="status-chip">GRAVITY NORMAL</div>
+        <div id="gate-readout" class="gate-readout hidden">GATE AHEAD</div>
+        <div id="wave-readout" class="wave-readout">WAVE 000M</div>
+      </div>
+    </div>
+
+    <section id="menu" class="screen">
+      <div class="menu-content">
+        <div class="eyebrow">NEON CITY // SURVIVAL RUN</div>
+        <h1>OUTRUN<br><span>THE LEVEL</span></h1>
+        <p class="lede">向右奔跑，跳过障碍，穿越重力门。身后的删除浪不会停下，前方的道路只在你抵达之前存在。</p>
+        <div class="menu-grid">
+          <div class="info-tile"><strong>JUMP</strong><span>空格 / 鼠标 / 触摸屏幕</span></div>
+          <div class="info-tile"><strong>MAIN RUN</strong><span>坚持 120 秒，找到出口</span></div>
+          <div class="info-tile"><strong>FLIP</strong><span>穿过重力门，上下世界翻转</span></div>
+        </div>
+        <div class="action-row">
+          <button id="start-main" class="action primary" type="button">START MAIN RUN<span class="button-meta">120 SECOND RUN</span></button>
+          <button id="start-endless" class="action" type="button" disabled>ENDLESS MODE<span id="unlock-state" class="button-meta">CLEAR MAIN RUN TO UNLOCK</span></button>
+        </div>
+        <div class="menu-foot">
+          <span>BEST SCORE <strong id="best-score">0000</strong></span>
+          <span>COLLECTIBLES <strong id="best-collectibles">000</strong></span>
+          <span>R = RESTART · ESC = MENU</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="result" class="screen hidden">
+      <div class="result-content">
+        <div id="result-kicker" class="result-kicker">RUN ENDED</div>
+        <h2 id="result-title" class="result-title">THE WAVE GOT YOU</h2>
+        <p id="result-copy" class="result-copy"></p>
+        <div class="result-stats">
+          <div class="result-stat"><span>Score</span><strong id="result-score">0000</strong></div>
+          <div class="result-stat"><span>Distance</span><strong id="result-distance">0000</strong></div>
+          <div class="result-stat"><span>Collect</span><strong id="result-collectibles">000</strong></div>
+          <div class="result-stat"><span>Time</span><strong id="result-time">00:00</strong></div>
+        </div>
+        <p id="result-best" class="result-best">HISTORICAL BEST 0000</p>
+        <div class="action-row">
+          <button id="retry" class="action primary" type="button">RETRY</button>
+          <button id="result-endless" class="action" type="button">ENDLESS MODE</button>
+          <button id="back-menu" class="action" type="button">MAIN MENU</button>
+        </div>
+      </div>
+    </section>
+
+    <div id="toast" role="status"></div>
+  </main>
+
+  <script>
+    (() => {
+      const canvas = document.getElementById('game');
+      const ctx = canvas.getContext('2d', { alpha: false });
+      const menu = document.getElementById('menu');
+      const result = document.getElementById('result');
+      const hud = document.getElementById('hud');
+      const toast = document.getElementById('toast');
+      const modeLabel = document.getElementById('mode-label');
+      const timeReadout = document.getElementById('time-readout');
+      const scoreReadout = document.getElementById('score-readout');
+      const distanceReadout = document.getElementById('distance-readout');
+      const timerFill = document.getElementById('timer-fill');
+      const gravityChip = document.getElementById('gravity-chip');
+      const gateReadout = document.getElementById('gate-readout');
+      const waveReadout = document.getElementById('wave-readout');
+      const bestScore = document.getElementById('best-score');
+      const bestCollectibles = document.getElementById('best-collectibles');
+      const startMain = document.getElementById('start-main');
+      const startEndless = document.getElementById('start-endless');
+      const unlockState = document.getElementById('unlock-state');
+      const resultKicker = document.getElementById('result-kicker');
+      const resultTitle = document.getElementById('result-title');
+      const resultCopy = document.getElementById('result-copy');
+      const resultScore = document.getElementById('result-score');
+      const resultDistance = document.getElementById('result-distance');
+      const resultCollectibles = document.getElementById('result-collectibles');
+      const resultTime = document.getElementById('result-time');
+      const resultBest = document.getElementById('result-best');
+      const retry = document.getElementById('retry');
+      const resultEndless = document.getElementById('result-endless');
+      const backMenu = document.getElementById('back-menu');
+
+      const PLAYER_W = 28;
+      const PLAYER_H = 34;
+      const TRACK_THICK = 24;
+      const GRAVITY = 1850;
+      const JUMP_VELOCITY = 620;
+      const MAX_GAP = 110;
+      const MAIN_DURATION = 120;
+      const MAIN_BASE_SPEED = 245;
+      const MAIN_MAX_SPEED = 335;
+      const storageKeys = {
+        best: 'otl-best-score',
+        collectibles: 'otl-best-collectibles',
+        unlocked: 'otl-endless-unlocked',
+        history: 'otl-history'
+      };
+
+      const state = {
+        scene: 'menu',
+        runMode: 'main',
+        elapsed: 0,
+        speed: 0,
+        distance: 0,
+        score: 0,
+        collectibles: 0,
+        bestScore: 0,
+        bestCollectibles: 0,
+        unlocked: false,
+        history: [],
+        seed: 1,
+        cameraX: 0,
+        trackY: 0,
+        oldTrackY: 0,
+        startX: 140,
+        waveX: -760,
+        gravityDir: 1,
+        flipAnim: { active: false, t: 1, from: 1, to: 1 },
+        finish: null,
+        finishSpawned: false,
+        nextGateAt: 6200,
+        segments: [],
+        obstacles: [],
+        pickups: [],
+        gates: [],
+        particles: [],
+        player: null,
+        ambientTime: 0,
+        outcome: null
+      };
+
+      let viewW = 0;
+      let viewH = 0;
+      let dpr = 1;
+      let lastFrame = performance.now();
+      let toastTimer = 0;
+
+      function readStorage() {
+        try {
+          state.bestScore = Number(localStorage.getItem(storageKeys.best) || 0);
+          state.bestCollectibles = Number(localStorage.getItem(storageKeys.collectibles) || 0);
+          state.unlocked = localStorage.getItem(storageKeys.unlocked) === '1';
+          state.history = JSON.parse(localStorage.getItem(storageKeys.history) || '[]');
+          if (!Array.isArray(state.history)) state.history = [];
+        } catch {
+          state.bestScore = 0;
+          state.bestCollectibles = 0;
+          state.unlocked = false;
+          state.history = [];
+        }
+      }
+
+      function writeStorage() {
+        try {
+          localStorage.setItem(storageKeys.best, String(state.bestScore));
+          localStorage.setItem(storageKeys.collectibles, String(state.bestCollectibles));
+          localStorage.setItem(storageKeys.unlocked, state.unlocked ? '1' : '0');
+          localStorage.setItem(storageKeys.history, JSON.stringify(state.history.slice(0, 8)));
+        } catch {}
+      }
+
+      function updateMenuStats() {
+        bestScore.textContent = padNumber(state.bestScore, 4);
+        bestCollectibles.textContent = padNumber(state.bestCollectibles, 3);
+        startEndless.disabled = !state.unlocked;
+        resultEndless.disabled = !state.unlocked;
+        unlockState.textContent = state.unlocked ? 'UNLOCKED // KEEP RUNNING' : 'CLEAR MAIN RUN TO UNLOCK';
+      }
+
+      function resize() {
+        const previous = state.trackY;
+        viewW = window.innerWidth;
+        viewH = window.innerHeight;
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        state.trackY = Math.min(510, Math.max(330, viewH * .68));
+        canvas.width = Math.floor(viewW * dpr);
+        canvas.height = Math.floor(viewH * dpr);
+        canvas.style.width = `${viewW}px`;
+        canvas.style.height = `${viewH}px`;
+        if (previous && state.scene === 'playing') {
+          const delta = state.trackY - previous;
+          state.segments.forEach(item => { item.y += delta; });
+          state.obstacles.forEach(item => { item.y += delta; });
+          state.pickups.forEach(item => { item.y += delta; });
+          state.gates.forEach(item => { item.y += delta; });
+          if (state.finish) state.finish.y += delta;
+          if (state.player) state.player.y += delta;
+        }
+        state.oldTrackY = state.trackY;
+      }
+
+      function setScene(scene) {
+        state.scene = scene;
+        menu.classList.toggle('hidden', scene !== 'menu');
+        result.classList.toggle('hidden', scene !== 'result');
+        hud.classList.toggle('hidden', scene !== 'playing');
+        if (scene === 'menu') updateMenuStats();
+      }
+
+      function seedRandom() {
+        state.seed = (Date.now() ^ Math.floor(Math.random() * 0xffffffff)) >>> 0;
+        if (!state.seed) state.seed = 1;
+      }
+
+      function random() {
+        state.seed = (Math.imul(state.seed, 1664525) + 1013904223) >>> 0;
+        return state.seed / 4294967296;
+      }
+
+      function range(min, max) {
+        return min + random() * (max - min);
+      }
+
+      function clamp(value, min, max) {
+        return Math.max(min, Math.min(max, value));
+      }
+
+      function padNumber(value, length) {
+        return String(Math.max(0, Math.floor(value))).padStart(length, '0');
+      }
+
+      function formatTime(seconds) {
+        const total = Math.max(0, Math.floor(seconds));
+        return `${String(Math.floor(total / 60)).padStart(2, '0')}:${String(total % 60).padStart(2, '0')}`;
+      }
+
+      function runSelfCheck() {
+        const conservativeJumpDistance = MAIN_BASE_SPEED * JUMP_VELOCITY * 2 / GRAVITY;
+        console.assert(MAIN_DURATION === 120, 'Main run must remain 120 seconds.');
+        console.assert(conservativeJumpDistance > MAX_GAP + PLAYER_W, 'Generated gaps exceed the jump envelope.');
+      }
+
+      function showToast(message, duration = 1500) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        window.clearTimeout(toastTimer);
+        toastTimer = window.setTimeout(() => toast.classList.remove('show'), duration);
+      }
+
+      function difficultyStage() {
+        if (state.runMode === 'endless') return Math.min(10, Math.floor(state.elapsed / 20));
+        return Math.min(5, Math.floor(state.elapsed / 20));
+      }
+
+      function speedForStage() {
+        const stage = difficultyStage();
+        const base = state.runMode === 'endless' ? 260 : MAIN_BASE_SPEED;
+        return Math.min(state.runMode === 'endless' ? 430 : MAIN_MAX_SPEED, base + stage * 18);
+      }
+
+      function segmentAt(x) {
+        for (let index = state.segments.length - 1; index >= 0; index -= 1) {
+          const segment = state.segments[index];
+          if (x >= segment.x && x <= segment.x + segment.w) return segment;
+          if (segment.x < x - 1400) break;
+        }
+        return null;
+      }
+
+      function startGame(mode) {
+        if (mode === 'endless' && !state.unlocked) return;
+        seedRandom();
+        state.runMode = mode;
+        state.elapsed = 0;
+        state.speed = mode === 'endless' ? 260 : MAIN_BASE_SPEED;
+        state.distance = 0;
+        state.score = 0;
+        state.collectibles = 0;
+        state.cameraX = 0;
+        state.waveX = 140 - 860;
+        state.gravityDir = 1;
+        state.flipAnim = { active: false, t: 1, from: 1, to: 1 };
+        state.finish = null;
+        state.finishSpawned = false;
+        state.nextGateAt = mode === 'endless' ? 5200 : 6200;
+        state.outcome = null;
+        state.particles = [];
+        state.segments = [{ x: -700, w: 2150, y: state.trackY }];
+        state.obstacles = [];
+        state.pickups = [];
+        state.gates = [];
+        state.player = {
+          x: state.startX,
+          y: state.trackY - PLAYER_H,
+          w: PLAYER_W,
+          h: PLAYER_H,
+          vy: 0,
+          grounded: true,
+          coyote: .12,
+          jumpBuffer: 0,
+          runPhase: 0
+        };
+        populateSegment(state.segments[0], null, true);
+        ensureWorld();
+        setScene('playing');
+        modeLabel.textContent = mode === 'endless' ? 'ENDLESS' : 'MAIN RUN';
+        canvas.focus({ preventScroll: true });
+        showToast(mode === 'endless' ? 'ENDLESS MODE // KEEP MOVING' : '120 SECONDS // THE EXIT WILL APPEAR', 1800);
+      }
+
+      function generateSegment() {
+        const previous = state.segments[state.segments.length - 1];
+        const stage = difficultyStage();
+        const gap = Math.min(MAX_GAP, range(42, 82 + stage * 4));
+        const width = clamp(range(650, 900) - stage * 10, 610, 900);
+        const y = clamp(previous.y + range(-24, 24), state.trackY - 55, state.trackY + 42);
+        const segment = { x: previous.x + previous.w + gap, w: width, y };
+        state.segments.push(segment);
+        let gateX = null;
+        if (state.nextGateAt <= segment.x + segment.w) {
+          gateX = state.nextGateAt;
+          if (gateX < segment.x + 180) gateX = segment.x + 210;
+          if (gateX > segment.x + segment.w - 180) gateX = segment.x + segment.w - 220;
+          state.gates.push({ x: gateX, y: segment.y, passed: false });
+          state.nextGateAt = gateX + range(5200, 7200);
+        }
+        populateSegment(segment, gateX, false);
+      }
+
+      function overlapRange(value, start, end) {
+        return value >= start && value <= end;
+      }
+
+      function isSafeObstacleX(x, placed, gateX, safeStart, safeEnd) {
+        if (x < safeStart || x > safeEnd) return false;
+        if (gateX !== null && overlapRange(x, gateX - 280, gateX + 280)) return false;
+        return placed.every(item => Math.abs(item - x) >= 248);
+      }
+
+      function addPickup(x, y, segment) {
+        if (x < segment.x + 130 || x > segment.x + segment.w - 100) return;
+        state.pickups.push({ x, y, r: 7, phase: random() * Math.PI * 2, taken: false });
+      }
+
+      function populateSegment(segment, gateX, opening) {
+        const stage = difficultyStage();
+        const safeStart = Math.max(segment.x + 210, state.startX + (opening ? 520 : 0));
+        const safeEnd = segment.x + segment.w - 170;
+        const placed = [];
+        const obstacleCount = opening ? 0 : 1 + (stage >= 1 && random() < .55 ? 1 : 0) + (stage >= 3 && random() < .42 ? 1 : 0);
+        let attempts = 0;
+        while (placed.length < obstacleCount && attempts < 80) {
+          attempts += 1;
+          const x = range(safeStart, safeEnd);
+          if (!isSafeObstacleX(x, placed, gateX, safeStart, safeEnd)) continue;
+          placed.push(x);
+          const typeRoll = random();
+          const kind = typeRoll < .42 ? 'block' : typeRoll < .76 ? 'spike' : 'bar';
+          const obstacle = {
+            x,
+            y: segment.y,
+            w: kind === 'spike' ? range(58, 78) : kind === 'bar' ? range(48, 64) : range(34, 52),
+            h: kind === 'spike' ? range(17, 23) : kind === 'bar' ? range(28, 36) : range(42, 60),
+            kind,
+            hit: false
+          };
+          state.obstacles.push(obstacle);
+          addPickup(x - range(80, 130), segment.y - range(74, 102), segment);
+        }
+        const freePickups = opening ? 4 : 2 + (random() < .55 ? 1 : 0);
+        let pickupAttempts = 0;
+        while (pickupAttempts < 40 && placed.length + freePickups > 0) {
+          if (state.pickups.filter(item => item.x >= segment.x && item.x <= segment.x + segment.w).length >= freePickups + placed.length) break;
+          pickupAttempts += 1;
+          const x = range(safeStart, safeEnd);
+          if (gateX !== null && overlapRange(x, gateX - 210, gateX + 210)) continue;
+          if (placed.some(item => Math.abs(item - x) < 118)) continue;
+          addPickup(x, segment.y - range(58, 118), segment);
+        }
+      }
+
+      function ensureWorld() {
+        const target = state.player ? state.player.x + viewW * 3.6 : viewW * 3.6;
+        while (state.segments[state.segments.length - 1].x + state.segments[state.segments.length - 1].w < target) generateSegment();
+        const keepBefore = state.waveX - 950;
+        state.segments = state.segments.filter(item => item.x + item.w > keepBefore);
+        state.obstacles = state.obstacles.filter(item => item.x + item.w > keepBefore);
+        state.pickups = state.pickups.filter(item => !item.taken && item.x + item.r > keepBefore);
+        state.gates = state.gates.filter(item => !item.passed || item.x > keepBefore);
+      }
+
+      function requestJump() {
+        if (state.scene !== 'playing' || !state.player) return;
+        state.player.jumpBuffer = .14;
+        tryJump();
+      }
+
+      function tryJump() {
+        const player = state.player;
+        if (!player || player.jumpBuffer <= 0 || (!player.grounded && player.coyote <= 0)) return;
+        player.vy = -JUMP_VELOCITY;
+        player.grounded = false;
+        player.coyote = 0;
+        player.jumpBuffer = 0;
+        burst(player.x + player.w * .5, player.y + player.h * .8, '#64e8ff', 8);
+      }
+
+      function updatePlayer(dt) {
+        const player = state.player;
+        const center = player.x + player.w * .5;
+        const supportBefore = segmentAt(center);
+        if (player.grounded && supportBefore) {
+          player.y = supportBefore.y - player.h;
+          player.vy = 0;
+        } else if (player.grounded && !supportBefore) {
+          player.grounded = false;
+        }
+        player.jumpBuffer = Math.max(0, player.jumpBuffer - dt);
+        player.coyote = player.grounded ? .12 : Math.max(0, player.coyote - dt);
+        tryJump();
+        const oldBottom = player.y + player.h;
+        player.vy += GRAVITY * dt;
+        player.y += player.vy * dt;
+        player.x += state.speed * dt;
+        player.runPhase += dt * state.speed * .045;
+        const supportAfter = segmentAt(player.x + player.w * .5);
+        if (supportAfter && !player.grounded) {
+          const newBottom = player.y + player.h;
+          if (player.vy >= 0 && oldBottom <= supportAfter.y + 8 && newBottom >= supportAfter.y) {
+            player.y = supportAfter.y - player.h;
+            player.vy = 0;
+            player.grounded = true;
+            burst(player.x + player.w * .5, supportAfter.y, state.gravityDir === 1 ? '#64e8ff' : '#ffc86b', 5);
+          }
+        }
+        if (player.grounded) {
+          const support = segmentAt(player.x + player.w * .5);
+          if (!support || Math.abs(player.y + player.h - support.y) > 14) player.grounded = false;
+        }
+      }
+
+      function updateGates() {
+        const player = state.player;
+        for (const gate of state.gates) {
+          if (gate.passed || player.x + player.w < gate.x) continue;
+          gate.passed = true;
+          const previous = state.gravityDir;
+          state.gravityDir *= -1;
+          if (player.grounded) {
+            player.y = gate.y - player.h;
+            player.vy = 0;
+          }
+          state.flipAnim = { active: true, t: 0, from: previous, to: state.gravityDir };
+          burst(gate.x, gate.y - 80, state.gravityDir === -1 ? '#ffc86b' : '#64e8ff', 26);
+          showToast(state.gravityDir === -1 ? 'GRAVITY INVERTED' : 'GRAVITY RESTORED', 1200);
+        }
+      }
+
+      function spawnFinish() {
+        if (state.finishSpawned) return;
+        const target = state.player.x + 700;
+        let segment = state.segments.find(item => item.x > state.player.x + 300 && item.x + item.w > target);
+        if (!segment) {
+          ensureWorld();
+          segment = state.segments.find(item => item.x > state.player.x + 300 && item.x + item.w > target);
+        }
+        if (!segment) return;
+        const finishX = Math.max(target, segment.x + 230);
+        state.finish = { x: finishX, y: segment.y };
+        state.finishSpawned = true;
+        state.obstacles = state.obstacles.filter(item => item.x < state.player.x + 150 || item.x > finishX + 180);
+        state.pickups = state.pickups.filter(item => item.x < state.player.x + 150 || item.x > finishX + 180);
+        showToast('EXIT SIGNAL // KEEP RUNNING', 1800);
+      }
+
+      function updatePickups() {
+        const player = state.player;
+        for (const pickup of state.pickups) {
+          if (pickup.taken) continue;
+          const nearestX = clamp(pickup.x, player.x, player.x + player.w);
+          const nearestY = clamp(pickup.y, player.y, player.y + player.h);
+          const dx = pickup.x - nearestX;
+          const dy = pickup.y - nearestY;
+          if (dx * dx + dy * dy < 13 * 13) {
+            pickup.taken = true;
+            state.collectibles += 1;
+            burst(pickup.x, pickup.y, '#7ef3bf', 9);
+          }
+        }
+      }
+
+      function rectsOverlap(a, b) {
+        return a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+      }
+
+      function updateObstacles() {
+        const player = state.player;
+        for (const obstacle of state.obstacles) {
+          if (obstacle.hit || obstacle.x + obstacle.w < player.x - 30 || obstacle.x > player.x + player.w + 30) continue;
+          const hitbox = { x: obstacle.x + 3, y: obstacle.y - obstacle.h + 3, w: obstacle.w - 6, h: obstacle.h - 3 };
+          if (rectsOverlap(player, hitbox)) {
+            obstacle.hit = true;
+            finishRun('impact');
+            return;
+          }
+        }
+      }
+
+      function checkFailStates() {
+        const player = state.player;
+        if (!player) return;
+        if (state.waveX > player.x - 18) {
+          finishRun('wave');
+          return;
+        }
+        if (player.y > viewH + 260 || player.y + player.h < -260) finishRun('fall');
+      }
+
+      function updateParticles(dt) {
+        state.particles = state.particles.filter(item => item.life > 0);
+        for (const particle of state.particles) {
+          particle.life -= dt;
+          particle.x += particle.vx * dt;
+          particle.y += particle.vy * dt;
+          particle.vy += 480 * dt;
+        }
+      }
+
+      function burst(x, y, color, count) {
+        for (let index = 0; index < count; index += 1) {
+          const angle = random() * Math.PI * 2;
+          const speed = range(35, 165);
+          state.particles.push({
+            x,
+            y,
+            vx: Math.cos(angle) * speed,
+            vy: Math.sin(angle) * speed,
+            life: range(.22, .62),
+            maxLife: .62,
+            size: range(2, 4),
+            color
+          });
+        }
+      }
+
+      function update(dt) {
+        state.ambientTime += dt;
+        if (state.scene !== 'playing') {
+          updateParticles(dt);
+          return;
+        }
+        state.elapsed += dt;
+        state.speed = speedForStage();
+        state.waveX += (state.speed + 4 + difficultyStage() * .55) * dt;
+        state.distance = Math.max(0, (state.player.x - state.startX) / 10);
+        state.score = Math.floor(state.distance * 4 + state.collectibles * 125 + state.elapsed * 2);
+        updatePlayer(dt);
+        updateGates();
+        updatePickups();
+        updateObstacles();
+        if (state.scene !== 'playing') return;
+        if (state.runMode === 'main' && state.elapsed >= MAIN_DURATION) spawnFinish();
+        if (state.finish && state.player.x + state.player.w >= state.finish.x) {
+          finishRun('complete');
+          return;
+        }
+        checkFailStates();
+        ensureWorld();
+        const targetCamera = state.player.x - viewW * .27;
+        state.cameraX += (targetCamera - state.cameraX) * Math.min(1, dt * 9);
+        if (state.flipAnim.active) {
+          state.flipAnim.t = Math.min(1, state.flipAnim.t + dt / .58);
+          if (state.flipAnim.t >= 1) state.flipAnim.active = false;
+        }
+        updateParticles(dt);
+        updateHud();
+      }
+
+      function finishRun(outcome) {
+        if (state.scene !== 'playing') return;
+        state.outcome = outcome;
+        state.distance = Math.max(0, (state.player.x - state.startX) / 10);
+        state.score = Math.floor(state.distance * 4 + state.collectibles * 125 + state.elapsed * 2);
+        if (outcome === 'complete') {
+          state.score += 1500;
+          state.unlocked = true;
+        }
+        state.bestScore = Math.max(state.bestScore, state.score);
+        state.bestCollectibles = Math.max(state.bestCollectibles, state.collectibles);
+        state.history.unshift({ mode: state.runMode, score: state.score, distance: state.distance, collectibles: state.collectibles, outcome, at: Date.now() });
+        writeStorage();
+        renderResult();
+        setScene('result');
+      }
+
+      function renderResult() {
+        const complete = state.outcome === 'complete';
+        const reason = {
+          impact: ['RUN ENDED', 'THE LEVEL HIT BACK', '障碍碰撞。下一局会从全新的道路开始。'],
+          fall: ['RUN ENDED', 'NO TRACK BELOW', '跑道在脚下断开了。提前预判下一段平台。'],
+          wave: ['RUN ENDED', 'THE DELETE WAVE GOT YOU', '身后的世界已经追上。保持节奏，别让失误拖慢你。'],
+          complete: ['LEVEL CLEARED', 'YOU OUTRAN THE LEVEL', '出口已抵达。无限模式现已解锁。']
+        }[state.outcome];
+        resultKicker.textContent = reason[0];
+        resultTitle.textContent = reason[1];
+        resultCopy.textContent = reason[2];
+        resultScore.textContent = padNumber(state.score, 4);
+        resultDistance.textContent = padNumber(state.distance, 4);
+        resultCollectibles.textContent = padNumber(state.collectibles, 3);
+        resultTime.textContent = formatTime(state.elapsed);
+        resultBest.textContent = `HISTORICAL BEST ${padNumber(state.bestScore, 4)}${state.bestScore === state.score ? ' // NEW RECORD' : ''}`;
+        retry.textContent = state.runMode === 'endless' ? 'RETRY ENDLESS' : 'RETRY';
+        resultEndless.classList.toggle('hidden', !state.unlocked);
+        resultEndless.disabled = !state.unlocked;
+        if (complete) resultTitle.style.color = 'var(--green)';
+        else resultTitle.style.color = 'var(--text)';
+      }
+
+      function updateHud() {
+        timeReadout.textContent = formatTime(state.elapsed);
+        scoreReadout.textContent = padNumber(state.score, 4);
+        distanceReadout.textContent = padNumber(state.distance, 4);
+        timerFill.style.width = state.runMode === 'main' ? `${Math.min(100, state.elapsed / MAIN_DURATION * 100)}%` : `${Math.min(100, state.elapsed / 180 * 100)}%`;
+        gravityChip.textContent = state.gravityDir === 1 ? 'GRAVITY NORMAL' : 'GRAVITY INVERTED';
+        gravityChip.classList.toggle('inverted', state.gravityDir === -1);
+        const gap = Math.max(0, state.player.x - state.waveX);
+        waveReadout.textContent = `WAVE ${padNumber(gap / 10, 3)}M`;
+        const nextGate = state.gates.find(item => !item.passed && item.x > state.player.x);
+        if (nextGate && nextGate.x - state.player.x < 760) {
+          gateReadout.classList.remove('hidden');
+          gateReadout.textContent = `GATE AHEAD ${Math.max(1, Math.floor((nextGate.x - state.player.x) / 10))}M`;
+        } else {
+          gateReadout.classList.add('hidden');
+        }
+      }
+
+      function worldToScreenX(x) {
+        return x - state.cameraX;
+      }
+
+      function flipScale() {
+        if (!state.flipAnim.active) return state.gravityDir === 1 ? 1 : -1;
+        const t = state.flipAnim.t;
+        const eased = t * t * (3 - 2 * t);
+        return state.flipAnim.from + (state.flipAnim.to - state.flipAnim.from) * eased;
+      }
+
+      function drawBackground() {
+        const gradient = ctx.createLinearGradient(0, 0, 0, viewH);
+        gradient.addColorStop(0, '#040711');
+        gradient.addColorStop(.56, '#071227');
+        gradient.addColorStop(1, '#050a17');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, viewW, viewH);
+        drawAtmosphere();
+        drawCity(.08, viewH * .58, '#0b1a31', .58, 70, 150);
+        drawCity(.18, viewH * .64, '#0a1528', .8, 44, 110);
+        drawPerspectiveGrid();
+      }
+
+      function drawAtmosphere() {
+        const horizon = viewH * .55;
+        ctx.strokeStyle = 'rgba(75, 154, 181, .12)';
+        ctx.lineWidth = 1;
+        for (let index = 0; index < 5; index += 1) {
+          const y = horizon - index * 42;
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(viewW, y);
+          ctx.stroke();
+        }
+        ctx.fillStyle = 'rgba(91, 208, 225, .22)';
+        for (let index = 0; index < 28; index += 1) {
+          const x = (index * 173 + 61) % Math.max(1, viewW);
+          const y = 45 + (index * 47) % Math.max(70, viewH * .42);
+          ctx.fillRect(x, y, 1, 1);
+        }
+      }
+
+      function drawCity(parallax, baseY, color, alpha, minWidth, maxWidth) {
+        const stride = 112;
+        const offset = -((state.cameraX * parallax) % stride);
+        ctx.save();
+        ctx.globalAlpha = alpha;
+        ctx.fillStyle = color;
+        for (let index = -2; index < Math.ceil(viewW / stride) + 3; index += 1) {
+          const x = index * stride + offset;
+          const width = minWidth + ((index * 37) % Math.max(1, maxWidth - minWidth + 1) + maxWidth - minWidth + 1) % Math.max(1, maxWidth - minWidth + 1);
+          const height = 38 + Math.abs((index * 61) % 150);
+          ctx.fillRect(x, baseY - height, width, height);
+          ctx.fillStyle = 'rgba(89, 188, 211, .12)';
+          for (let row = 0; row < Math.floor(height / 26); row += 1) {
+            if ((index + row) % 3 !== 0) ctx.fillRect(x + 10, baseY - height + 14 + row * 26, 3, 7);
+            if ((index + row) % 4 === 0) ctx.fillRect(x + width - 16, baseY - height + 14 + row * 26, 3, 7);
+          }
+          ctx.fillStyle = color;
+        }
+        ctx.restore();
+      }
+
+      function drawPerspectiveGrid() {
+        const horizonX = viewW * .56;
+        const horizonY = viewH * .58;
+        ctx.save();
+        ctx.strokeStyle = 'rgba(67, 179, 205, .16)';
+        ctx.lineWidth = 1;
+        for (let index = -8; index <= 8; index += 1) {
+          const bottomX = horizonX + index * 125;
+          ctx.beginPath();
+          ctx.moveTo(horizonX, horizonY);
+          ctx.lineTo(bottomX, viewH + 40);
+          ctx.stroke();
+        }
+        for (let index = 0; index < 8; index += 1) {
+          const y = horizonY + Math.pow(index / 7, 1.7) * (viewH - horizonY + 30);
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(viewW, y);
+          ctx.stroke();
+        }
+        ctx.restore();
+      }
+
+      function drawWorld() {
+        const scale = flipScale();
+        const deleteEdge = clamp(worldToScreenX(state.waveX), 0, viewW);
+        ctx.save();
+        ctx.beginPath();
+        ctx.rect(deleteEdge, 0, viewW - deleteEdge, viewH);
+        ctx.clip();
+        ctx.translate(0, viewH * .5);
+        ctx.scale(1, scale);
+        ctx.translate(0, -viewH * .5);
+        drawSegments();
+        drawPickups();
+        drawObstacles();
+        drawGates();
+        if (state.finish) drawFinish();
+        drawParticles();
+        drawPlayer();
+        ctx.restore();
+      }
+
+      function visibleX(x, width = 0) {
+        return x + width > -120 && x < viewW + 120;
+      }
+
+      function drawSegments() {
+        for (const segment of state.segments) {
+          const x = worldToScreenX(segment.x);
+          if (!visibleX(x, segment.w)) continue;
+          ctx.fillStyle = '#071321';
+          ctx.fillRect(x, segment.y, segment.w, TRACK_THICK);
+          ctx.fillStyle = '#0b2330';
+          ctx.fillRect(x, segment.y + 14, segment.w, 14);
+          ctx.strokeStyle = '#36d9ef';
+          ctx.lineWidth = 1.4;
+          ctx.beginPath();
+          ctx.moveTo(x, segment.y + 1);
+          ctx.lineTo(x + segment.w, segment.y + 1);
+          ctx.stroke();
+          ctx.strokeStyle = 'rgba(71, 202, 225, .27)';
+          ctx.beginPath();
+          ctx.moveTo(x, segment.y + TRACK_THICK);
+          ctx.lineTo(x + segment.w, segment.y + TRACK_THICK);
+          ctx.stroke();
+          ctx.fillStyle = 'rgba(60, 176, 201, .16)';
+          const firstMark = Math.ceil(segment.x / 92) * 92;
+          for (let mark = firstMark; mark < segment.x + segment.w; mark += 92) {
+            const markX = worldToScreenX(mark);
+            if (markX > x + 16 && markX < x + segment.w - 16) ctx.fillRect(markX, segment.y + 7, 27, 2);
+          }
+        }
+      }
+
+      function drawObstacles() {
+        for (const obstacle of state.obstacles) {
+          const x = worldToScreenX(obstacle.x);
+          if (!visibleX(x, obstacle.w)) continue;
+          const top = obstacle.y - obstacle.h;
+          if (obstacle.kind === 'spike') {
+            ctx.fillStyle = '#291528';
+            ctx.strokeStyle = '#ff5878';
+            ctx.lineWidth = 1.5;
+            const count = Math.max(2, Math.floor(obstacle.w / 18));
+            const step = obstacle.w / count;
+            for (let index = 0; index < count; index += 1) {
+              ctx.beginPath();
+              ctx.moveTo(x + index * step, obstacle.y);
+              ctx.lineTo(x + index * step + step * .5, top);
+              ctx.lineTo(x + (index + 1) * step, obstacle.y);
+              ctx.closePath();
+              ctx.fill();
+              ctx.stroke();
+            }
+            ctx.fillStyle = '#ff8ca4';
+            ctx.fillRect(x, obstacle.y - 2, obstacle.w, 2);
+          } else {
+            ctx.fillStyle = obstacle.kind === 'bar' ? '#211a21' : '#0d1f2c';
+            ctx.fillRect(x, top, obstacle.w, obstacle.h);
+            ctx.fillStyle = obstacle.kind === 'bar' ? '#56303d' : '#13394a';
+            ctx.fillRect(x + obstacle.w, top + 5, 7, obstacle.h);
+            ctx.fillStyle = obstacle.kind === 'bar' ? '#ff718a' : '#52e5f6';
+            ctx.fillRect(x, top, obstacle.w, 2);
+            ctx.fillRect(x, top, 2, obstacle.h);
+            ctx.fillStyle = 'rgba(255,255,255,.72)';
+            ctx.fillRect(x + 8, top + 8, Math.min(18, obstacle.w - 15), 2);
+          }
+        }
+      }
+
+      function drawPickups() {
+        for (const pickup of state.pickups) {
+          if (pickup.taken) continue;
+          const x = worldToScreenX(pickup.x);
+          if (!visibleX(x, pickup.r * 2)) continue;
+          const bob = Math.sin(state.ambientTime * 4 + pickup.phase) * 3;
+          const y = pickup.y + bob;
+          ctx.save();
+          ctx.translate(x, y);
+          ctx.rotate(Math.PI * .25 + state.ambientTime * .6);
+          ctx.fillStyle = '#092b35';
+          ctx.strokeStyle = '#7ef3bf';
+          ctx.lineWidth = 1.4;
+          ctx.fillRect(-6, -6, 12, 12);
+          ctx.strokeRect(-6, -6, 12, 12);
+          ctx.fillStyle = '#c6ffe8';
+          ctx.fillRect(-2, -2, 4, 4);
+          ctx.restore();
+        }
+      }
+
+      function drawGates() {
+        for (const gate of state.gates) {
+          if (gate.passed) continue;
+          const x = worldToScreenX(gate.x);
+          if (!visibleX(x, 70)) continue;
+          const top = gate.y - 182;
+          ctx.fillStyle = 'rgba(6, 26, 38, .92)';
+          ctx.fillRect(x - 25, top, 12, 182 + TRACK_THICK);
+          ctx.fillRect(x + 13, top, 12, 182 + TRACK_THICK);
+          ctx.fillRect(x - 25, top, 50, 12);
+          ctx.strokeStyle = '#64e8ff';
+          ctx.lineWidth = 1.5;
+          ctx.strokeRect(x - 25, top, 50, 12);
+          ctx.strokeRect(x - 25, top, 12, 182 + TRACK_THICK);
+          ctx.strokeRect(x + 13, top, 12, 182 + TRACK_THICK);
+          ctx.fillStyle = state.gravityDir === 1 ? '#64e8ff' : '#ffc86b';
+          ctx.fillRect(x - 8, top + 5, 16, 2);
+          ctx.fillRect(x - 8, top + 5, 2, 5);
+          ctx.fillRect(x + 6, top + 5, 2, 5);
+          ctx.font = '800 9px ui-sans-serif, system-ui';
+          ctx.textAlign = 'center';
+          ctx.fillText('GRAVITY', x, top - 10);
+          ctx.font = '900 15px ui-sans-serif, system-ui';
+          ctx.fillText(state.gravityDir === 1 ? '↓' : '↑', x, top + 34);
+        }
+      }
+
+      function drawFinish() {
+        const x = worldToScreenX(state.finish.x);
+        if (!visibleX(x, 70)) return;
+        const top = state.finish.y - 190;
+        ctx.fillStyle = 'rgba(9, 38, 43, .96)';
+        ctx.fillRect(x - 28, top, 13, 190 + TRACK_THICK);
+        ctx.fillRect(x + 15, top, 13, 190 + TRACK_THICK);
+        ctx.fillRect(x - 28, top, 56, 13);
+        ctx.strokeStyle = '#7ef3bf';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(x - 28, top, 56, 13);
+        ctx.strokeRect(x - 28, top, 13, 190 + TRACK_THICK);
+        ctx.strokeRect(x + 15, top, 13, 190 + TRACK_THICK);
+        ctx.fillStyle = '#d6ffed';
+        ctx.font = '900 12px ui-sans-serif, system-ui';
+        ctx.textAlign = 'center';
+        ctx.fillText('EXIT', x, top - 12);
+        ctx.fillRect(x - 8, top + 5, 16, 2);
+      }
+
+      function drawPlayer() {
+        const player = state.player;
+        if (!player) return;
+        const x = worldToScreenX(player.x);
+        const y = player.y;
+        ctx.save();
+        ctx.globalAlpha = .24;
+        ctx.fillStyle = '#64e8ff';
+        ctx.fillRect(x - 14, y + 10, 11, 3);
+        ctx.fillRect(x - 29, y + 17, 16, 2);
+        ctx.restore();
+        ctx.save();
+        ctx.shadowColor = '#64e8ff';
+        ctx.shadowBlur = 9;
+        ctx.fillStyle = '#b9f8ff';
+        ctx.fillRect(x + 4, y + 4, 20, 26);
+        ctx.restore();
+        ctx.fillStyle = '#0a2636';
+        ctx.fillRect(x + 8, y + 8, 12, 10);
+        ctx.fillStyle = '#64e8ff';
+        ctx.fillRect(x + 10, y + 10, 8, 3);
+        ctx.fillStyle = '#173d4d';
+        ctx.fillRect(x + 8, y + 22, 12, 6);
+        const legOffset = Math.sin(player.runPhase) * 3;
+        ctx.fillStyle = '#83ecf7';
+        ctx.fillRect(x + 6, y + 29, 6, 5 + legOffset);
+        ctx.fillRect(x + 17, y + 29, 6, 5 - legOffset);
+        ctx.fillStyle = '#ffc86b';
+        ctx.fillRect(x + 23, y + 12, 3, 8);
+      }
+
+      function drawParticles() {
+        for (const particle of state.particles) {
+          const alpha = clamp(particle.life / particle.maxLife, 0, 1);
+          ctx.globalAlpha = alpha;
+          ctx.fillStyle = particle.color;
+          ctx.fillRect(worldToScreenX(particle.x), particle.y, particle.size, particle.size);
+        }
+        ctx.globalAlpha = 1;
+      }
+
+      function drawWave() {
+        if (state.scene !== 'playing') return;
+        const x = worldToScreenX(state.waveX);
+        if (x < -120 || x > viewW + 120) return;
+        const gradient = ctx.createLinearGradient(x - 94, 0, x + 4, 0);
+        gradient.addColorStop(0, 'rgba(255, 52, 108, 0)');
+        gradient.addColorStop(.72, 'rgba(255, 52, 108, .11)');
+        gradient.addColorStop(1, 'rgba(255, 105, 145, .28)');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(x - 94, 0, 98, viewH);
+        ctx.fillStyle = '#ff5878';
+        ctx.fillRect(x, 0, 2, viewH);
+        ctx.fillStyle = 'rgba(255, 175, 190, .68)';
+        for (let y = 22; y < viewH; y += 54) ctx.fillRect(x + 5, y, 9, 1);
+      }
+
+      function drawAmbientTrack() {
+        const y = state.trackY;
+        ctx.fillStyle = '#071321';
+        ctx.fillRect(0, y, viewW, TRACK_THICK);
+        ctx.fillStyle = '#0b2330';
+        ctx.fillRect(0, y + 14, viewW, 14);
+        ctx.strokeStyle = '#36d9ef';
+        ctx.lineWidth = 1.4;
+        ctx.beginPath();
+        ctx.moveTo(0, y + 1);
+        ctx.lineTo(viewW, y + 1);
+        ctx.stroke();
+        for (let index = -1; index < 12; index += 1) {
+          const x = index * 125 - (state.ambientTime * 42 % 125);
+          ctx.fillStyle = 'rgba(60, 176, 201, .16)';
+          ctx.fillRect(x, y + 7, 30, 2);
+        }
+        const playerX = viewW * .3;
+        const playerY = y - PLAYER_H;
+        ctx.fillStyle = 'rgba(100, 232, 255, .18)';
+        ctx.fillRect(playerX - 40, playerY + 15, 30, 3);
+        ctx.fillStyle = '#b9f8ff';
+        ctx.fillRect(playerX, playerY + 4, 20, 26);
+        ctx.fillStyle = '#0a2636';
+        ctx.fillRect(playerX + 4, playerY + 8, 12, 10);
+        ctx.fillStyle = '#64e8ff';
+        ctx.fillRect(playerX + 6, playerY + 10, 8, 3);
+      }
+
+      function draw() {
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.clearRect(0, 0, viewW, viewH);
+        drawBackground();
+        if (state.scene === 'playing' || state.scene === 'result') {
+          drawWorld();
+          drawWave();
+        } else {
+          drawAmbientTrack();
+        }
+      }
+
+      function frame(now) {
+        const dt = Math.min(.033, Math.max(0, (now - lastFrame) / 1000));
+        lastFrame = now;
+        update(dt);
+        draw();
+        requestAnimationFrame(frame);
+      }
+
+      startMain.addEventListener('click', () => startGame('main'));
+      startEndless.addEventListener('click', () => startGame('endless'));
+      retry.addEventListener('click', () => startGame(state.runMode));
+      resultEndless.addEventListener('click', () => startGame('endless'));
+      backMenu.addEventListener('click', () => setScene('menu'));
+
+      window.addEventListener('keydown', event => {
+        if (event.code === 'Escape') {
+          if (state.scene === 'playing') setScene('menu');
+          return;
+        }
+        if (event.code === 'KeyR' && state.scene === 'result') {
+          startGame(state.runMode);
+          return;
+        }
+        if (['Space', 'ArrowUp', 'KeyW'].includes(event.code)) {
+          event.preventDefault();
+          if (state.scene === 'menu') startGame('main');
+          else if (state.scene === 'playing') requestJump();
+        }
+      });
+
+      canvas.addEventListener('pointerdown', event => {
+        if (event.pointerType === 'mouse' && event.button !== 0) return;
+        event.preventDefault();
+        requestJump();
+      }, { passive: false });
+
+      window.addEventListener('resize', resize);
+      runSelfCheck();
+      readStorage();
+      resize();
+      updateMenuStats();
+      setScene('menu');
+      requestAnimationFrame(frame);
+    })();
+  </script>
+</body>
+</html>
