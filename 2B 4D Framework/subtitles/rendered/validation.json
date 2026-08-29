@@ -1,0 +1,29 @@
+{
+  "font": "MiSans",
+  "font_weight": 700,
+  "invariants": {
+    "ass_escape_round_trip": true,
+    "raw_source_sha256_locked": true,
+    "rendered_outputs_match_expectation": true,
+    "segment_provenance_exact_and_ordered": true,
+    "source_cues_exact_and_ordered": true,
+    "translations_complete_and_hash_matched": true
+  },
+  "outputs": {
+    "bilingual.ass": "fecd2062bf5bf58fd5bb68da1c5c91f006d819779f9d71354073ea1ca60c4fba",
+    "bilingual.srt": "7579f845a2836e59f6a4871b3cca107e9851181552371489eb75e64e91e4cf08",
+    "source.srt": "0d8ce9695a29a19dc313642790f861ffd031362c66f1afd55123c92daa88ec7e",
+    "subtitle-manifest.json": "7c661f0246d6469b7b32bab0570f18d8d31d6eb3673086929fa49619bb24dae2",
+    "zh-CN.srt": "d5d2012bae2da52cc8da1ba86c05eb9aa66c4579a76f26bf9ec27321b2e3d687"
+  },
+  "schema_version": 1,
+  "segment_count": 125,
+  "segment_ledger_sha256": "7402b6c4f9ffb60c85fe25d713c5bf5c572b775f4957cb3a2926e04785bc1cee",
+  "source_ledger_sha256": "408960b8129484268e566837316ad83e0a8d14199a1b57a01e3d28b94e6d3a58",
+  "source_sha256": "f9b6adfd11be816760b840248b985a67ae57074176548a7e158147aaba147211",
+  "structurally_valid": true,
+  "target_language": "zh-CN",
+  "translation_count": 125,
+  "translation_quality_reviewed": false,
+  "validation_scope": "structural_source_integrity"
+}

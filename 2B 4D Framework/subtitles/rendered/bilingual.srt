@@ -1,0 +1,620 @@
+1
+00:00:11,280 --> 00:00:13,200
+Hi, my name is Rick Dacon from the
+大家好 我是来自
+
+2
+00:00:13,200 --> 00:00:15,519
+Ringling College of Art and Design. Now
+林林艺术与设计学院的 Rick Dacon
+
+3
+00:00:15,519 --> 00:00:17,520
+that we've explored what AI fluency
+既然我们已经探讨了 AI 流畅度
+
+4
+00:00:17,520 --> 00:00:19,279
+means and the different ways we interact
+的含义以及我们与 AI 互动的不同方式
+
+5
+00:00:19,279 --> 00:00:21,920
+with AI, let's dive into the core
+现在让我们深入了解核心
+
+6
+00:00:21,920 --> 00:00:24,160
+competencies that help us navigate AI
+帮助我们驾驭与 AI 协作的能力
+
+7
+00:00:24,160 --> 00:00:26,640
+collaboration effectively, efficiently,
+以有效、高效
+
+8
+00:00:26,640 --> 00:00:29,039
+ethically, and safely.
+合乎伦理且安全的方式
+
+9
+00:00:29,039 --> 00:00:30,800
+No matter how you're working with AI,
+无论你如何与 AI 合作
+
+10
+00:00:30,800 --> 00:00:32,079
+whether through automation,
+无论是通过自动化
+
+11
+00:00:32,079 --> 00:00:34,800
+augmentation, or agency, there are four
+增强还是自主代理 都有四项
+
+12
+00:00:34,800 --> 00:00:37,800
+essential competencies that make all the
+至关重要的能力 它们会带来
+
+13
+00:00:37,800 --> 00:00:41,000
+difference. We call them the four Ds:
+一切不同 我们称之为四个 D
+
+14
+00:00:41,000 --> 00:00:43,520
+delegation, description, discernment,
+委派、描述、辨别
+
+15
+00:00:43,520 --> 00:00:46,399
+and diligence. First is delegation,
+和尽责 首先是委派
+
+16
+00:00:46,399 --> 00:00:49,239
+which focuses on the big
+它关注全局
+
+17
+00:00:49,239 --> 00:00:51,360
+picture. What are you trying to
+你想要实现什么
+
+18
+00:00:51,360 --> 00:00:53,440
+accomplish? What kinds of work are
+涉及哪些类型的工作
+
+19
+00:00:53,440 --> 00:00:55,680
+involved? What work should you handle
+哪些工作应由你亲自处理
+
+20
+00:00:55,680 --> 00:00:58,960
+yourself? And where might AI be helpful?
+AI 又能在哪些地方提供帮助
+
+21
+00:00:58,960 --> 00:01:00,640
+Think about a research project you're
+想想你正在进行的一个研究项目
+
+22
+00:01:00,640 --> 00:01:02,399
+working on. You might decide to have
+你可能会决定让
+
+23
+00:01:02,399 --> 00:01:04,320
+your AI assistant review lengthy
+AI 助手审阅冗长的
+
+24
+00:01:04,320 --> 00:01:06,479
+documents and data, then engage in a
+文档和数据 然后参与
+
+25
+00:01:06,479 --> 00:01:07,760
+thoughtful discussion about the
+对以下内容展开深入讨论
+
+26
+00:01:07,760 --> 00:01:10,080
+implications and findings, but reserve
+影响和发现 但把
+
+27
+00:01:10,080 --> 00:01:11,920
+the critical analysis and final
+关键分析和最终
+
+28
+00:01:11,920 --> 00:01:13,720
+conclusions for
+结论留给
+
+29
+00:01:13,720 --> 00:01:16,479
+yourself. To delegate effectively, you
+你自己 要有效委派
+
+30
+00:01:16,479 --> 00:01:18,880
+need to understand your goal and the
+你需要理解目标和
+
+31
+00:01:18,880 --> 00:01:21,439
+problem you're solving. Recognize what
+所要解决的问题 认识到
+
+32
+00:01:21,439 --> 00:01:25,040
+AI can and can't do well. And lastly,
+AI 擅长和不擅长什么 最后
+
+33
+00:01:25,040 --> 00:01:28,119
+thoughtfully divide the work between you
+and the
+周全地在你和 之间分配工作
+
+34
+00:01:28,119 --> 00:01:30,560
+AI. Delegation isn't just about
+AI 之间 委派并不只是
+
+35
+00:01:30,560 --> 00:01:32,799
+offloading tasks. It's about having a
+把任务甩出去 而是要有一套
+
+36
+00:01:32,799 --> 00:01:34,799
+clear vision and strategically choosing
+清晰的愿景 并有策略地选择
+
+37
+00:01:34,799 --> 00:01:38,079
+how AI fits into your process. This
+AI 如何融入你的流程 这种
+
+38
+00:01:38,079 --> 00:01:39,759
+thoughtful approach is essential for
+周全的方法对于
+
+39
+00:01:39,759 --> 00:01:43,000
+both effective and efficient AI
+实现有效且高效的 AI
+
+40
+00:01:43,000 --> 00:01:45,360
+collaboration. Next comes description,
+协作至关重要 接下来是描述
+
+41
+00:01:45,360 --> 00:01:47,600
+which focuses on clear communication
+它关注与 AI 的清晰沟通
+
+42
+00:01:47,600 --> 00:01:50,799
+with AI. Consider the difference between
+想想以下两者的区别
+
+43
+00:01:50,799 --> 00:01:53,040
+vaguely stating, "Make me a logo."
+含糊地说：“给我做个标志”
+
+44
+00:01:53,040 --> 00:01:55,360
+versus describing your company's values,
+和描述你公司的价值观
+
+45
+00:01:55,360 --> 00:01:57,360
+target audience, preferred colors, style
+目标受众、偏好颜色、风格
+
+46
+00:01:57,360 --> 00:02:00,159
+references, and so on. Or if you're
+参考示例等 如果你
+
+47
+00:02:00,159 --> 00:02:02,240
+using an AI as a tutor, you might take
+把 AI 当作导师 还可以多做一步
+
+48
+00:02:02,240 --> 00:02:04,479
+the extra step to specify, "Don't tell
+明确告诉它：“不要直接告诉
+
+49
+00:02:04,479 --> 00:02:06,240
+me the answer, just help me work through
+我答案 只要帮我一步步解决
+
+50
+00:02:06,240 --> 00:02:08,000
+this problem step by step so I can
+这个问题 这样我就能
+
+51
+00:02:08,000 --> 00:02:10,399
+better understand the concept."
+更好地理解这个概念”
+
+52
+00:02:10,399 --> 00:02:12,239
+Description goes beyond just writing
+描述不只是写
+
+53
+00:02:12,239 --> 00:02:14,760
+prompts. It's about having detailed,
+提示词 而是进行详细的
+
+54
+00:02:14,760 --> 00:02:18,319
+contextrich conversations that establish
+且充满上下文的对话 明确
+
+55
+00:02:18,319 --> 00:02:20,080
+what you're hoping to achieve in the
+你希望实现什么 以及
+
+56
+00:02:20,080 --> 00:02:23,280
+format of the output, how you want the
+输出的格式和你希望
+
+57
+00:02:23,280 --> 00:02:26,480
+AI to approach the task, the context and
+AI 如何处理任务 还有它需要的上下文和
+
+58
+00:02:26,480 --> 00:02:28,319
+information that the AI might need to
+信息 以便 AI 能够
+
+59
+00:02:28,319 --> 00:02:31,120
+best work with you on this task, and the
+最好地与你一起完成这项任务 以及
+
+60
+00:02:31,120 --> 00:02:34,640
+tone and style of interaction.
+互动的语气和风格
+
+61
+00:02:34,640 --> 00:02:36,640
+Effective description means articulating
+有效的描述意味着表达
+
+62
+00:02:36,640 --> 00:02:38,879
+your needs and vision in a way that sets
+你的需求和愿景 让
+
+63
+00:02:38,879 --> 00:02:41,519
+up both you and the AI for greatest
+你和 AI 都能获得最大的
+
+64
+00:02:41,519 --> 00:02:43,239
+collaborative
+协作成效
+
+65
+00:02:43,239 --> 00:02:46,480
+success. The third D is discernment,
+第三个 D 是辨别
+
+66
+00:02:46,480 --> 00:02:48,720
+which involves thoughtfully evaluating
+它需要周全地评估
+
+67
+00:02:48,720 --> 00:02:51,599
+what AI gives you. Let's say you've
+AI 提供给你的内容 假设你
+
+68
+00:02:51,599 --> 00:02:53,840
+asked an AI assistant to suggest a
+请 AI 助手提出一项
+
+69
+00:02:53,840 --> 00:02:56,080
+marketing strategy. Your discernment
+营销策略 这时你的辨别力
+
+70
+00:02:56,080 --> 00:02:58,800
+comes into play as you assess, are the
+就体现在评估以下问题：这些
+
+71
+00:02:58,800 --> 00:03:01,519
+facts accurate? Does the reasoning make
+事实准确吗？推理是否
+
+72
+00:03:01,519 --> 00:03:04,159
+sense? Do the recommendations align with
+合理？建议是否符合
+
+73
+00:03:04,159 --> 00:03:06,840
+your brand values and audience? And most
+你的品牌价值观和受众？最重要的是
+
+74
+00:03:06,840 --> 00:03:09,599
+importantly, does this output actually
+这份输出是否真的
+
+75
+00:03:09,599 --> 00:03:12,560
+help you move forward? Discernment draws
+能帮助你推进工作？辨别力建立在
+
+76
+00:03:12,560 --> 00:03:15,040
+upon your own expertise in a domain and
+你在相关领域的专业知识之上 并且
+
+77
+00:03:15,040 --> 00:03:16,879
+requires developing the judgment and
+需要培养判断力和
+
+78
+00:03:16,879 --> 00:03:18,640
+critical insight to separate what's
+批判性洞察 以区分什么是
+
+79
+00:03:18,640 --> 00:03:20,959
+useful from what's not and to recognize
+有用的内容与无用的内容 并识别
+
+80
+00:03:20,959 --> 00:03:23,280
+when AI outputs need refinement or
+当 AI 输出需要进一步完善 或者
+
+81
+00:03:23,280 --> 00:03:25,920
+should be set aside entirely. Most of
+应该完全弃用时 我们的大多数
+
+82
+00:03:25,920 --> 00:03:28,000
+our interactions with AI involve small
+与 AI 的互动都包含一些小循环
+
+83
+00:03:28,000 --> 00:03:30,159
+loops of description and discernment,
+由描述和辨别组成的循环
+
+84
+00:03:30,159 --> 00:03:32,159
+describing what we need, evaluating what
+描述我们的需求 评估我们得到的内容
+
+85
+00:03:32,159 --> 00:03:35,280
+we get, refining our request, and so on.
+不断完善请求 诸如此类
+
+86
+00:03:35,280 --> 00:03:37,280
+We'll explore this more deeply later in
+稍后在课程中我们会更深入地探讨
+
+87
+00:03:37,280 --> 00:03:40,319
+the course. Finally, there's diligence,
+最后是尽责
+
+88
+00:03:40,319 --> 00:03:42,640
+which focuses on responsible AI
+它关注负责任的 AI
+
+89
+00:03:42,640 --> 00:03:44,239
+interactions.
+互动
+
+90
+00:03:44,239 --> 00:03:46,400
+For example, if you are using AI to help
+例如 如果你使用 AI 来帮助
+
+91
+00:03:46,400 --> 00:03:47,959
+write job descriptions or review
+撰写职位描述 或审阅
+
+92
+00:03:47,959 --> 00:03:49,920
+applications, how are you ensuring
+求职申请 你如何确保
+
+93
+00:03:49,920 --> 00:03:52,840
+fairness and controlling for potential
+公平 并控制潜在的
+
+94
+00:03:52,840 --> 00:03:55,440
+biases? When making important decisions
+偏见？当你借助 AI 做出重要决定时
+
+95
+00:03:55,440 --> 00:03:57,680
+with AI assistance, how are you
+你如何
+
+96
+00:03:57,680 --> 00:03:59,360
+verifying the accuracy of the
+核实所呈现信息的
+
+97
+00:03:59,360 --> 00:04:01,519
+information presented to you? Are you
+准确性？你是否
+
+98
+00:04:01,519 --> 00:04:03,760
+protecting sensitive data? Have you
+保护敏感数据？你有没有
+
+99
+00:04:03,760 --> 00:04:05,599
+considered how to be transparent about
+考虑如何透明地说明
+
+100
+00:04:05,599 --> 00:04:08,640
+the involvement of AI? Are you willing
+AI 的参与？你是否愿意
+
+101
+00:04:08,640 --> 00:04:11,040
+to be accountable for the AI assisted
+为 AI 协助完成的
+
+102
+00:04:11,040 --> 00:04:13,120
+work you have done?
+工作承担责任？
+
+103
+00:04:13,120 --> 00:04:15,200
+Diligence means taking ownership of your
+尽责意味着对你借助 AI 完成的工作
+
+104
+00:04:15,200 --> 00:04:17,359
+AI assisted work and being willing to
+承担所有权 并愿意
+
+105
+00:04:17,359 --> 00:04:19,600
+stand behind final products created
+为使用 AI 创作的最终成果
+
+106
+00:04:19,600 --> 00:04:23,840
+using AI. Diligence is critical for safe
+负责到底 尽责对于安全
+
+107
+00:04:23,840 --> 00:04:26,919
+and ethical AI
+且合乎伦理的 AI
+
+108
+00:04:26,919 --> 00:04:29,680
+collaboration. To recap, AI fluency
+协作至关重要 总结一下 AI 流畅度
+
+109
+00:04:29,680 --> 00:04:31,440
+means developing practical skills,
+意味着培养实用的技能
+
+110
+00:04:31,440 --> 00:04:33,280
+knowledge, insights, and values that
+知识、洞察和价值观
+
+111
+00:04:33,280 --> 00:04:34,960
+help you use AI effectively,
+帮助你有效地使用 AI
+
+112
+00:04:34,960 --> 00:04:38,160
+efficiently, ethically, and safely. AI
+高效、合乎伦理且安全地使用 AI
+
+113
+00:04:38,160 --> 00:04:40,600
+fluency includes four key
+AI 流畅度包含四项关键
+
+114
+00:04:40,600 --> 00:04:43,040
+competencies. Delegation to decide when
+能力 委派是决定何时
+
+115
+00:04:43,040 --> 00:04:46,160
+and how to use AI, description to
+以及如何使用 AI 描述是
+
+116
+00:04:46,160 --> 00:04:49,040
+communicate clearly with AI, discernment
+与 AI 清晰沟通 辨别是
+
+117
+00:04:49,040 --> 00:04:52,240
+to evaluate AI outputs, and diligence to
+评估 AI 输出 尽责是
+
+118
+00:04:52,240 --> 00:04:55,040
+use AI responsibly. What makes these
+负责任地使用 AI 这些
+
+119
+00:04:55,040 --> 00:04:57,040
+competencies so valuable is that they
+能力之所以如此宝贵 是因为它们
+
+120
+00:04:57,040 --> 00:04:59,040
+aren't tied to specific AI tools or
+不依赖于特定的 AI 工具或
+
+121
+00:04:59,040 --> 00:05:01,520
+techniques that might become outdated.
+可能会过时的技术
+
+122
+00:05:01,520 --> 00:05:04,160
+Instead, they're fundamental skills that
+相反 它们是基础能力
+
+123
+00:05:04,160 --> 00:05:06,639
+will help you adapt and grow alongside
+能帮助你适应这项快速发展
+
+124
+00:05:06,639 --> 00:05:11,080
+this rapidly evolving technology.
+的技术 并与它共同成长
