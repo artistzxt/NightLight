@@ -1,0 +1,636 @@
+1
+00:00:02,619 --> 00:00:04,639
+[music]
+
+2
+00:00:12,320 --> 00:00:16,480
+Hi, my name is Drew Bent and I'm a
+
+3
+00:00:14,480 --> 00:00:18,880
+teacher, programmer, and member of
+
+4
+00:00:16,480 --> 00:00:21,520
+technical staff at Enthropic. Welcome to
+
+5
+00:00:18,880 --> 00:00:22,800
+our exploration of generative AI. In
+
+6
+00:00:21,520 --> 00:00:25,279
+this video, we'll dive into what
+
+7
+00:00:22,800 --> 00:00:27,439
+generative AI actually is, how it works
+
+8
+00:00:25,279 --> 00:00:29,279
+under the hood, and the technological
+
+9
+00:00:27,439 --> 00:00:31,119
+breakthroughs that made these systems
+
+10
+00:00:29,279 --> 00:00:33,280
+possible. You might interact with
+
+11
+00:00:31,119 --> 00:00:35,440
+generative AI daily without fully
+
+12
+00:00:33,280 --> 00:00:37,920
+understanding what's happening behind
+
+13
+00:00:35,440 --> 00:00:40,079
+the scenes. Let's change that.
+
+14
+00:00:37,920 --> 00:00:42,079
+Generative AI refers to artificial
+
+15
+00:00:40,079 --> 00:00:44,480
+intelligence systems that can create new
+
+16
+00:00:42,079 --> 00:00:47,520
+content rather than just analyzing
+
+17
+00:00:44,480 --> 00:00:49,680
+existing data. For example, while
+
+18
+00:00:47,520 --> 00:00:52,239
+traditional AI might classify emails as
+
+19
+00:00:49,680 --> 00:00:54,160
+spam or not spam based on patterns,
+
+20
+00:00:52,239 --> 00:00:56,719
+generative AI can write a completely new
+
+21
+00:00:54,160 --> 00:00:59,280
+email for you. The first approach
+
+22
+00:00:56,719 --> 00:01:01,199
+analyzes and categorizes. The second
+
+23
+00:00:59,280 --> 00:01:04,400
+creates something new that didn't exist
+
+24
+00:01:01,199 --> 00:01:06,799
+before. This represents a fundamental
+
+25
+00:01:04,400 --> 00:01:09,360
+shift in AI capabilities.
+
+26
+00:01:06,799 --> 00:01:11,520
+Large language models or LLM like
+
+27
+00:01:09,360 --> 00:01:14,080
+anthropics cloud models are a prominent
+
+28
+00:01:11,520 --> 00:01:16,320
+type of generative AI. They're called
+
+29
+00:01:14,080 --> 00:01:19,040
+language models because they're trained
+
+30
+00:01:16,320 --> 00:01:21,200
+to predict and generate human language
+
+31
+00:01:19,040 --> 00:01:24,159
+and large because they contain billions
+
+32
+00:01:21,200 --> 00:01:26,320
+of parameters, mathematical values that
+
+33
+00:01:24,159 --> 00:01:28,479
+determine how the model processes
+
+34
+00:01:26,320 --> 00:01:31,280
+information, somewhat like synaptic
+
+35
+00:01:28,479 --> 00:01:34,400
+connections in your brain. The path to
+
+36
+00:01:31,280 --> 00:01:36,400
+today's generative AI wasn't sudden. It
+
+37
+00:01:34,400 --> 00:01:38,479
+involved three crucial developments
+
+38
+00:01:36,400 --> 00:01:40,320
+coming together at the right time.
+
+39
+00:01:38,479 --> 00:01:42,479
+First, there were algorithmic and
+
+40
+00:01:40,320 --> 00:01:44,880
+architectural breakthroughs that
+
+41
+00:01:42,479 --> 00:01:47,520
+fundamentally changed how AI systems
+
+42
+00:01:44,880 --> 00:01:50,000
+learn. While neural networks have been
+
+43
+00:01:47,520 --> 00:01:51,280
+around conceptually for decades, the
+
+44
+00:01:50,000 --> 00:01:54,479
+development of the transformer
+
+45
+00:01:51,280 --> 00:01:56,640
+architecture in 2017 was a gamecher.
+
+46
+00:01:54,479 --> 00:01:58,799
+This architecture excels at processing
+
+47
+00:01:56,640 --> 00:02:01,280
+sequences of text while maintaining
+
+48
+00:01:58,799 --> 00:02:03,439
+relationships between words across long
+
+49
+00:02:01,280 --> 00:02:05,840
+passages, which is critical for
+
+50
+00:02:03,439 --> 00:02:08,080
+understanding language in context.
+
+51
+00:02:05,840 --> 00:02:10,160
+Second, the explosion of digital data
+
+52
+00:02:08,080 --> 00:02:12,640
+provided the essential raw material for
+
+53
+00:02:10,160 --> 00:02:15,040
+training. Modern LLMs like Claude learn
+
+54
+00:02:12,640 --> 00:02:17,520
+from diverse sources such as websites,
+
+55
+00:02:15,040 --> 00:02:18,959
+code repositories, and other text that
+
+56
+00:02:17,520 --> 00:02:20,640
+represent human knowledge and
+
+57
+00:02:18,959 --> 00:02:22,959
+communication.
+
+58
+00:02:20,640 --> 00:02:24,959
+This vast tapestry of information helps
+
+59
+00:02:22,959 --> 00:02:27,520
+models develop a broad and nuanced
+
+60
+00:02:24,959 --> 00:02:31,120
+understanding of both language and
+
+61
+00:02:27,520 --> 00:02:33,040
+concepts. And third, massive increases
+
+62
+00:02:31,120 --> 00:02:35,360
+in computational power made it possible
+
+63
+00:02:33,040 --> 00:02:37,680
+to train these complex models on all
+
+64
+00:02:35,360 --> 00:02:40,560
+that data. Specialized hardware like
+
+65
+00:02:37,680 --> 00:02:43,680
+GPUs or graphics processing units and
+
+66
+00:02:40,560 --> 00:02:45,440
+TPUs or tensor processing units along
+
+67
+00:02:43,680 --> 00:02:48,160
+with distributed computing networks
+
+68
+00:02:45,440 --> 00:02:49,840
+often called clusters enable processing
+
+69
+00:02:48,160 --> 00:02:52,400
+that would have been impossible just a
+
+70
+00:02:49,840 --> 00:02:54,480
+few years earlier. The combination of
+
+71
+00:02:52,400 --> 00:02:57,280
+these three factors led to an important
+
+72
+00:02:54,480 --> 00:02:59,200
+discovery known as the scaling laws.
+
+73
+00:02:57,280 --> 00:03:01,360
+These empirical findings showed that as
+
+74
+00:02:59,200 --> 00:03:04,000
+models grew larger and trained on more
+
+75
+00:03:01,360 --> 00:03:05,920
+data with more computing power, their
+
+76
+00:03:04,000 --> 00:03:08,400
+performance improved in predictable
+
+77
+00:03:05,920 --> 00:03:11,040
+ways. More surprisingly, researchers
+
+78
+00:03:08,400 --> 00:03:13,120
+found that entirely new capabilities
+
+79
+00:03:11,040 --> 00:03:15,519
+began to emerge as these models grew
+
+80
+00:03:13,120 --> 00:03:17,920
+larger. Abilities no one explicitly
+
+81
+00:03:15,519 --> 00:03:20,640
+program, like reasoning through problems
+
+82
+00:03:17,920 --> 00:03:22,879
+stepby step or adapting to new tasks
+
+83
+00:03:20,640 --> 00:03:24,800
+with minimal instruction. Let's peek
+
+84
+00:03:22,879 --> 00:03:27,440
+under the hood at how these systems
+
+85
+00:03:24,800 --> 00:03:29,920
+actually work. During initial training,
+
+86
+00:03:27,440 --> 00:03:32,000
+also called pre-training, LLMs like
+
+87
+00:03:29,920 --> 00:03:34,480
+Claude analyze patterns across billions
+
+88
+00:03:32,000 --> 00:03:36,000
+of text examples. Imagine reading every
+
+89
+00:03:34,480 --> 00:03:38,239
+website and piece of text you could
+
+90
+00:03:36,000 --> 00:03:40,000
+find, not just to absorb information,
+
+91
+00:03:38,239 --> 00:03:42,319
+but to understand the statistical
+
+92
+00:03:40,000 --> 00:03:44,560
+relationships between words, phrases,
+
+93
+00:03:42,319 --> 00:03:45,920
+and concepts. At this stage, the model
+
+94
+00:03:44,560 --> 00:03:48,319
+essentially builds something like a
+
+95
+00:03:45,920 --> 00:03:50,239
+complex map of language and knowledge.
+
+96
+00:03:48,319 --> 00:03:52,640
+This pre-training process involves
+
+97
+00:03:50,239 --> 00:03:54,959
+showing the model text and asking it to
+
+98
+00:03:52,640 --> 00:03:56,799
+predict what comes next. Through many
+
+99
+00:03:54,959 --> 00:03:59,200
+iterations, the model gradually
+
+100
+00:03:56,799 --> 00:04:01,439
+refineses its predictions, learning the
+
+101
+00:03:59,200 --> 00:04:04,560
+patterns that make language coherent and
+
+102
+00:04:01,439 --> 00:04:06,400
+meaningful. After pre-training, models
+
+103
+00:04:04,560 --> 00:04:08,239
+undergo additional training called
+
+104
+00:04:06,400 --> 00:04:10,720
+fine-tuning, where they learn to follow
+
+105
+00:04:08,239 --> 00:04:12,879
+instructions, provide helpful responses,
+
+106
+00:04:10,720 --> 00:04:15,519
+and importantly, avoid generating
+
+107
+00:04:12,879 --> 00:04:17,440
+harmful content. This often involves
+
+108
+00:04:15,519 --> 00:04:19,359
+human feedback to improve the model's
+
+109
+00:04:17,440 --> 00:04:21,600
+performance, as well as reinforcement
+
+110
+00:04:19,359 --> 00:04:24,160
+learning, which uses rewards and
+
+111
+00:04:21,600 --> 00:04:27,040
+penalties to shape the model's behavior
+
+112
+00:04:24,160 --> 00:04:28,800
+toward being more helpful, honest, and
+
+113
+00:04:27,040 --> 00:04:30,960
+harmless. In the case of enthropics
+
+114
+00:04:28,800 --> 00:04:32,720
+models, once models are trained, they
+
+115
+00:04:30,960 --> 00:04:34,720
+are then deployed for you to interact
+
+116
+00:04:32,720 --> 00:04:37,280
+with. When you interact with Claude or
+
+117
+00:04:34,720 --> 00:04:39,199
+another LLM, you're providing a prompt,
+
+118
+00:04:37,280 --> 00:04:41,199
+which is text that the model reads and
+
+119
+00:04:39,199 --> 00:04:43,199
+then continues from based on patterns it
+
+120
+00:04:41,199 --> 00:04:45,040
+learned during training. The model isn't
+
+121
+00:04:43,199 --> 00:04:47,440
+retrieving pre-written answers from a
+
+122
+00:04:45,040 --> 00:04:49,360
+database. Instead, it's generating new
+
+123
+00:04:47,440 --> 00:04:51,360
+text that statistically follows from
+
+124
+00:04:49,360 --> 00:04:53,600
+what you've written. There's also a
+
+125
+00:04:51,360 --> 00:04:56,400
+practical limit to how much information
+
+126
+00:04:53,600 --> 00:04:58,800
+an LLM can consider at once, known as
+
+127
+00:04:56,400 --> 00:05:01,440
+the context window. Think of this as the
+
+128
+00:04:58,800 --> 00:05:04,240
+AI's working memory. The context window
+
+129
+00:05:01,440 --> 00:05:06,160
+includes your prompts, the AI responses,
+
+130
+00:05:04,240 --> 00:05:08,960
+and any other information you've shared
+
+131
+00:05:06,160 --> 00:05:11,360
+in your conversation. While AI companies
+
+132
+00:05:08,960 --> 00:05:13,680
+continue to grow the context window to
+
+133
+00:05:11,360 --> 00:05:15,919
+allow for longer context documents and
+
+134
+00:05:13,680 --> 00:05:17,919
+conversations, these limits remind us
+
+135
+00:05:15,919 --> 00:05:20,240
+that these systems don't have unlimited
+
+136
+00:05:17,919 --> 00:05:22,240
+access to information and cannot use
+
+137
+00:05:20,240 --> 00:05:25,199
+content beyond its current context
+
+138
+00:05:22,240 --> 00:05:27,680
+window without specialized tools like
+
+139
+00:05:25,199 --> 00:05:29,680
+web search. Bringing this together, the
+
+140
+00:05:27,680 --> 00:05:32,400
+three characteristics that make modern
+
+141
+00:05:29,680 --> 00:05:34,800
+generative AI so powerful include,
+
+142
+00:05:32,400 --> 00:05:37,280
+first, its ability to process vast
+
+143
+00:05:34,800 --> 00:05:39,520
+amounts of information during training,
+
+144
+00:05:37,280 --> 00:05:41,840
+allowing it to learn complex and nuanced
+
+145
+00:05:39,520 --> 00:05:44,880
+patterns in language and knowledge.
+
+146
+00:05:41,840 --> 00:05:47,120
+Second, its incontext learning ability.
+
+147
+00:05:44,880 --> 00:05:49,039
+LLMs can adapt to new tasks based on
+
+148
+00:05:47,120 --> 00:05:51,120
+instructions or examples in your prompt
+
+149
+00:05:49,039 --> 00:05:53,440
+without requiring additional training.
+
+150
+00:05:51,120 --> 00:05:56,000
+And third, emerging capabilities that
+
+151
+00:05:53,440 --> 00:05:57,759
+arise from scale. As these models grow
+
+152
+00:05:56,000 --> 00:06:00,080
+larger, they develop abilities that
+
+153
+00:05:57,759 --> 00:06:01,680
+weren't explicitly designed into them,
+
+154
+00:06:00,080 --> 00:06:03,680
+sometimes surprising even their
+
+155
+00:06:01,680 --> 00:06:05,600
+creators. In the next video, we'll
+
+156
+00:06:03,680 --> 00:06:08,080
+explore what these systems can and can't
+
+157
+00:06:05,600 --> 00:06:11,389
+do well, along with their most common or
+
+158
+00:06:08,080 --> 00:06:13,409
+valuable applications.
+
+159
+00:06:11,389 --> 00:06:13,409
+[music]
+

@@ -1,0 +1,53 @@
+U n d e r s t a n d i n g  
+G e n e r a t i v e  A I
+W h a t  i s  G e n e r a t i v e  A I ? G enerati v e AI r efer s t o ar tificial int ellig ence sys t ems 
+that can cr e at e new cont ent rather than jus t anal yzing 
+exis ting data.
+T r a d i t i o n a l  A I
+Clas sifie s emails as spam or no t spam
+G e n e r a t i v e  A I
+C an writ e a complet el y new email for y ou
+T h r e e  p i l l a r s  t h a t  m a d e  i t  p o s s i b l e
+A l g o r i t h m s
+Transformer ar chit e c tur e 
+(2017 ) r ev olutioniz e d 
+pr o ce s sing of long t ext 
+pas s ag e s
+D a t a  e x p l o s i o n
+E xplo sion of digital data 
+( w eb sit e s, co de r ep o sit orie s, 
+and o ther t ext) pr o vide d ra w 
+mat erial for training the s e 
+sys t ems
+C o m p u t i n g  p o w e r
+M as si v e incr e as e s in 
+computational p o w er (chip s 
+like GP Us) made it p o s sible 
+t o train the s e mo dels on all 
+the data
+H o w  i t  w o r k s
+P r e - t r a i n i n g
+M o dels anal yz e billions of t ext 
+example s, le arning t o pr e dic t 
+what come s next
+F i n e - t u n i n g
+M o dels ar e r efine d t o follo w 
+ins truc tions, b e helpful, and 
+a v oid harmful cont ent
+D e p l o y m e n t
+Us er s pr o vide pr omp t s , 
+and the mo del g enerat e s 
+r e sp ons e s bas e d on the 
+pr omp t s and patt erns it 
+le arne d during training
+K e y  c a p a b i l i t i e s
+V er s atile languag e skill 
+ G eneral - purp o s e abilitie 
+L e arning fr om example 
+ C onne c ting t o ext ernal t o ols and data
+C u r r e n t  l i m i t a t i o n s
+K no wle dg e cut o ff  dat 
+ Po t ential inaccuracie s ( " hallucinations "
+ C ont ext windo w cons traint 
+ Challeng e s with complex r e as oning and math
+C o p y r i g h t  2 0 2 5  R i c k  D a k a n ,  J o s e p h  F e l l e r ,  a n d  A n t h r o p i c .  R e l e a s e d  u n d e r  t h e  C C  B Y - N C - S A  4 . 0  l i c e n s e .

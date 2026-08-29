@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="800" viewBox="0 0 2000 800">
+  <defs>
+    <linearGradient id="bgFluency" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="0.58" stop-color="#121A35"/>
+      <stop offset="1" stop-color="#1A1640"/>
+    </linearGradient>
+    <linearGradient id="panelFluency" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24315A"/>
+      <stop offset="1" stop-color="#111A35"/>
+    </linearGradient>
+    <linearGradient id="limeFluency" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DDFB79"/>
+      <stop offset="1" stop-color="#B7E85E"/>
+    </linearGradient>
+    <linearGradient id="violetFluency" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A794FF"/>
+      <stop offset="1" stop-color="#6D5CF4"/>
+    </linearGradient>
+    <radialGradient id="orbFluency" cx="45%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#DDFB79" stop-opacity="0.96"/>
+      <stop offset="0.44" stop-color="#78D6C5" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#6D5CF4" stop-opacity="0.86"/>
+    </radialGradient>
+    <pattern id="gridFluency" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0 H0 V48" fill="none" stroke="#DCE5FF" stroke-opacity="0.055" stroke-width="1"/>
+      <circle cx="2" cy="2" r="1.5" fill="#DDFB79" opacity="0.17"/>
+    </pattern>
+    <filter id="shadowFluency" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000000" flood-opacity="0.38"/>
+    </filter>
+    <filter id="cardShadowFluency" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="13" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+    <style>
+      .sans { font-family: "Noto Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif; }
+      .heavy { font-weight: 900; }
+      .bold { font-weight: 700; }
+      .medium { font-weight: 560; }
+    </style>
+  </defs>
+
+  <rect width="2000" height="800" fill="url(#bgFluency)"/>
+  <rect width="2000" height="800" fill="url(#gridFluency)"/>
+  <circle cx="1090" cy="175" r="330" fill="#6D5CF4" opacity="0.08"/>
+  <circle cx="160" cy="720" r="300" fill="#78D6C5" opacity="0.055"/>
+  <path d="M0 753 C330 678 676 783 1015 730 C1147 710 1229 684 1320 650" fill="none" stroke="#DDFB79" stroke-opacity="0.12" stroke-width="2"/>
+
+  <g class="sans">
+    <g transform="translate(88 54)">
+      <rect width="360" height="58" rx="29" fill="#DDFB79"/>
+      <circle cx="30" cy="29" r="8" fill="#11182E"/>
+      <text x="53" y="38" fill="#11182E" font-size="24" letter-spacing="2.6" class="heavy">AI FLUENCY · 03</text>
+    </g>
+
+    <text x="92" y="165" fill="#DDFB79" font-size="28" letter-spacing="3.4" class="bold">生成式人工智能基础知识</text>
+    <text x="88" y="281" fill="#F7F8FF" font-size="96" letter-spacing="-4" class="heavy">生成式 AI，如何工作？</text>
+
+    <g transform="translate(88 320)">
+      <rect width="864" height="128" rx="30" fill="url(#limeFluency)" filter="url(#cardShadowFluency)"/>
+      <text x="40" y="87" fill="#10172B" font-size="68" letter-spacing="-2.2" class="heavy">会生成 ≠ 会知道</text>
+      <path d="M723 64 H818" stroke="#10172B" stroke-width="7" stroke-linecap="round"/>
+      <path d="M797 43 L821 64 L797 85" fill="none" stroke="#10172B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <text x="92" y="510" fill="#F7F8FF" font-size="40" letter-spacing="-0.6" class="bold">理解原理，才知道何时相信、何时核查</text>
+    <text x="92" y="562" fill="#AAB5D8" font-size="28" class="medium">架构 × 数据 × 算力  |  预训练 × 微调</text>
+
+    <g transform="translate(88 631)">
+      <rect width="1030" height="104" rx="26" fill="#F7F8FF" fill-opacity="0.075" stroke="#DDE5FF" stroke-opacity="0.16"/>
+      <text x="32" y="43" fill="#DDFB79" font-size="21" letter-spacing="2.1" class="bold">生成式 AI 基础</text>
+      <text x="32" y="78" fill="#F7F8FF" font-size="27" class="medium">能力 · 局限 · 人机协作</text>
+      <g transform="translate(889 23)">
+        <rect width="112" height="58" rx="29" fill="#DDFB79"/>
+        <text x="56" y="39" fill="#10172B" font-size="25" text-anchor="middle" class="heavy">原理</text>
+      </g>
+    </g>
+
+    <g filter="url(#shadowFluency)">
+      <rect x="1218" y="54" width="694" height="692" rx="52" fill="url(#panelFluency)" stroke="#DDE5FF" stroke-opacity="0.16"/>
+    </g>
+
+    <text x="1265" y="111" fill="#AAB5D8" font-size="17" letter-spacing="2.8" class="bold">WHAT MAKES GENERATIVE AI WORK</text>
+    <text x="1264" y="171" fill="#F7F8FF" font-size="45" class="heavy">生成式 AI 的底层</text>
+    <text x="1860" y="171" fill="#DDFB79" font-size="26" text-anchor="end" class="bold">03 / 03</text>
+
+    <g>
+      <path d="M1580 368 C1516 294 1431 276 1362 314" fill="none" stroke="#DDFB79" stroke-opacity="0.52" stroke-width="3" stroke-dasharray="8 10"/>
+      <path d="M1620 368 C1685 294 1767 276 1839 314" fill="none" stroke="#A794FF" stroke-opacity="0.52" stroke-width="3" stroke-dasharray="8 10"/>
+      <path d="M1580 452 C1516 526 1431 545 1362 507" fill="none" stroke="#78D6C5" stroke-opacity="0.52" stroke-width="3" stroke-dasharray="8 10"/>
+      <path d="M1620 452 C1685 526 1767 545 1839 507" fill="none" stroke="#FF9A78" stroke-opacity="0.52" stroke-width="3" stroke-dasharray="8 10"/>
+    </g>
+
+    <g filter="url(#cardShadowFluency)">
+      <g transform="translate(1264 222)">
+        <rect width="250" height="92" rx="24" fill="#DDFB79"/>
+        <text x="22" y="39" fill="#10172B" font-size="18" letter-spacing="1.6" class="bold">ARCHITECTURE</text>
+        <text x="22" y="72" fill="#10172B" font-size="25" class="heavy">Transformer 架构</text>
+      </g>
+      <g transform="translate(1617 222)">
+        <rect width="250" height="92" rx="24" fill="#A794FF"/>
+        <text x="22" y="39" fill="#17142F" font-size="18" letter-spacing="1.8" class="bold">DATA</text>
+        <text x="22" y="72" fill="#17142F" font-size="27" class="heavy">海量训练数据</text>
+      </g>
+      <g transform="translate(1264 504)">
+        <rect width="250" height="92" rx="24" fill="#78D6C5"/>
+        <text x="22" y="39" fill="#0B2730" font-size="18" letter-spacing="1.8" class="bold">TRAINING</text>
+        <text x="22" y="72" fill="#0B2730" font-size="27" class="heavy">预训练 + 微调</text>
+      </g>
+      <g transform="translate(1617 504)">
+        <rect width="250" height="92" rx="24" fill="#FF9A78"/>
+        <text x="22" y="39" fill="#321B25" font-size="18" letter-spacing="1.8" class="bold">LIMITS</text>
+        <text x="22" y="72" fill="#321B25" font-size="27" class="heavy">幻觉 + 上下文</text>
+      </g>
+    </g>
+
+    <g>
+      <circle cx="1600" cy="410" r="96" fill="#10172B" stroke="#DDE5FF" stroke-opacity="0.22" stroke-width="3"/>
+      <circle cx="1600" cy="410" r="73" fill="url(#orbFluency)" opacity="0.94"/>
+      <rect x="1544" y="369" width="112" height="78" rx="20" fill="#10172B" fill-opacity="0.92"/>
+      <text x="1600" y="397" fill="#DDFB79" font-size="17" letter-spacing="2.2" text-anchor="middle" class="bold">NEXT</text>
+      <text x="1600" y="429" fill="#F7F8FF" font-size="25" text-anchor="middle" class="heavy">TOKEN</text>
+      <circle cx="1578" cy="464" r="5" fill="#DDFB79"/>
+      <circle cx="1600" cy="464" r="5" fill="#F7F8FF"/>
+      <circle cx="1622" cy="464" r="5" fill="#DDFB79"/>
+      <path d="M1583 464 H1595 M1605 464 H1617" stroke="#F7F8FF" stroke-width="3" stroke-linecap="round"/>
+    </g>
+
+    <text x="1860" y="708" fill="#F7F8FF" font-size="46" text-anchor="end" class="heavy">03</text>
+    <text x="1860" y="737" fill="#AAB5D8" font-size="17" letter-spacing="2" text-anchor="end" class="bold">AI FLUENCY SERIES</text>
+  </g>
+</svg>

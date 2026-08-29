@@ -1,0 +1,784 @@
+1
+00:00:12,320 --> 00:00:14,480
+Hi, my name is Drew Bent and I'm a
+大家好 我叫 Drew Bent
+
+2
+00:00:14,480 --> 00:00:16,480
+teacher, programmer, and member of
+是一名教师、程序员 也是
+
+3
+00:00:16,480 --> 00:00:18,880
+technical staff at Enthropic. Welcome to
+Anthropic 的技术团队成员 欢迎来到
+
+4
+00:00:18,880 --> 00:00:21,520
+our exploration of generative AI. In
+我们对生成式 AI 的探索 在
+
+5
+00:00:21,520 --> 00:00:22,800
+this video, we'll dive into what
+这段视频里 我们将深入了解
+
+6
+00:00:22,800 --> 00:00:25,279
+generative AI actually is, how it works
+生成式 AI 究竟是什么 它如何运作
+
+7
+00:00:25,279 --> 00:00:27,439
+under the hood, and the technological
+它的底层原理 以及那些
+
+8
+00:00:27,439 --> 00:00:29,279
+breakthroughs that made these systems
+让这些系统成为可能的技术突破
+
+9
+00:00:29,279 --> 00:00:31,119
+possible. You might interact with
+你可能每天都在使用
+
+10
+00:00:31,119 --> 00:00:33,280
+generative AI daily without fully
+生成式 AI 却未必完全
+
+11
+00:00:33,280 --> 00:00:35,440
+understanding what's happening behind
+了解幕后究竟发生了什么
+
+12
+00:00:35,440 --> 00:00:37,920
+the scenes. Let's change that.
+让我们改变这一点
+
+13
+00:00:37,920 --> 00:00:40,079
+Generative AI refers to artificial
+生成式 AI 指的是能够创造新内容的
+
+14
+00:00:40,079 --> 00:00:42,079
+intelligence systems that can create new
+人工智能系统
+
+15
+00:00:42,079 --> 00:00:44,480
+content rather than just analyzing
+而不只是分析
+
+16
+00:00:44,480 --> 00:00:47,520
+existing data. For example, while
+现有数据 例如 传统 AI 可能会根据模式
+
+17
+00:00:47,520 --> 00:00:49,680
+traditional AI might classify emails as
+把邮件分类为垃圾邮件
+
+18
+00:00:49,680 --> 00:00:52,239
+spam or not spam based on patterns,
+或非垃圾邮件
+
+19
+00:00:52,239 --> 00:00:54,160
+generative AI can write a completely new
+而生成式 AI 可以替你写出一封全新的
+
+20
+00:00:54,160 --> 00:00:56,719
+email for you. The first approach
+电子邮件 第一种方法
+
+21
+00:00:56,719 --> 00:00:59,280
+analyzes and categorizes. The second
+是分析和分类 第二种
+
+22
+00:00:59,280 --> 00:01:01,199
+creates something new that didn't exist
+是创造之前并不存在的新内容
+
+23
+00:01:01,199 --> 00:01:04,400
+before. This represents a fundamental
+这代表着 AI 能力的一次根本性
+
+24
+00:01:04,400 --> 00:01:06,799
+shift in AI capabilities.
+转变
+
+25
+00:01:06,799 --> 00:01:09,360
+Large language models or LLM like
+大型语言模型 或 LLM 比如
+
+26
+00:01:09,360 --> 00:01:11,520
+anthropics cloud models are a prominent
+Anthropic 的 Claude 模型 是生成式 AI 的
+
+27
+00:01:11,520 --> 00:01:14,080
+type of generative AI. They're called
+一种重要类型 它们之所以叫
+
+28
+00:01:14,080 --> 00:01:16,320
+language models because they're trained
+语言模型 是因为训练目标是
+
+29
+00:01:16,320 --> 00:01:19,040
+to predict and generate human language
+预测并生成自然语言
+
+30
+00:01:19,040 --> 00:01:21,200
+and large because they contain billions
+之所以称为大型 是因为它们包含数十亿个
+
+31
+00:01:21,200 --> 00:01:24,159
+of parameters, mathematical values that
+参数 这些参数是决定
+
+32
+00:01:24,159 --> 00:01:26,320
+determine how the model processes
+模型如何处理信息的数学数值
+
+33
+00:01:26,320 --> 00:01:28,479
+information, somewhat like synaptic
+有点像你大脑中的突触
+
+34
+00:01:28,479 --> 00:01:31,280
+connections in your brain. The path to
+连接 通往今天生成式 AI 的道路并不突然
+
+35
+00:01:31,280 --> 00:01:34,400
+today's generative AI wasn't sudden. It
+它经历了三个关键进展
+
+36
+00:01:34,400 --> 00:01:36,400
+involved three crucial developments
+在恰当的时机
+
+37
+00:01:36,400 --> 00:01:38,479
+coming together at the right time.
+汇聚到了一起
+
+38
+00:01:38,479 --> 00:01:40,320
+First, there were algorithmic and
+首先 算法和
+
+39
+00:01:40,320 --> 00:01:42,479
+architectural breakthroughs that
+架构方面的突破
+
+40
+00:01:42,479 --> 00:01:44,880
+fundamentally changed how AI systems
+从根本上改变了 AI 系统
+
+41
+00:01:44,880 --> 00:01:47,520
+learn. While neural networks have been
+学习的方式 虽然神经网络在概念上
+
+42
+00:01:47,520 --> 00:01:50,000
+around conceptually for decades, the
+已经存在了几十年
+
+43
+00:01:50,000 --> 00:01:51,280
+development of the transformer
+但 Transformer
+
+44
+00:01:51,280 --> 00:01:54,479
+architecture in 2017 was a gamecher.
+架构在 2017 年的发展是一次重大突破
+
+45
+00:01:54,479 --> 00:01:56,640
+This architecture excels at processing
+这种架构特别擅长处理
+
+46
+00:01:56,640 --> 00:01:58,799
+sequences of text while maintaining
+文本序列 同时保持
+
+47
+00:01:58,799 --> 00:02:01,280
+relationships between words across long
+长段落中不同词语之间的关系
+
+48
+00:02:01,280 --> 00:02:03,439
+passages, which is critical for
+这对
+
+49
+00:02:03,439 --> 00:02:05,840
+understanding language in context.
+在上下文中理解语言至关重要
+
+50
+00:02:05,840 --> 00:02:08,080
+Second, the explosion of digital data
+第二 数字数据的爆炸式增长
+
+51
+00:02:08,080 --> 00:02:10,160
+provided the essential raw material for
+为训练提供了必不可少的原材料
+
+52
+00:02:10,160 --> 00:02:12,640
+training. Modern LLMs like Claude learn
+现代 LLM 比如 Claude 会从多样化来源中学习
+
+53
+00:02:12,640 --> 00:02:15,040
+from diverse sources such as websites,
+例如网站
+
+54
+00:02:15,040 --> 00:02:17,520
+code repositories, and other text that
+代码仓库 以及其他能够体现
+
+55
+00:02:17,520 --> 00:02:18,959
+represent human knowledge and
+人类知识与
+
+56
+00:02:18,959 --> 00:02:20,640
+communication.
+沟通方式的文本
+
+57
+00:02:20,640 --> 00:02:22,959
+This vast tapestry of information helps
+这张庞大的信息织锦帮助
+
+58
+00:02:22,959 --> 00:02:24,959
+models develop a broad and nuanced
+模型形成广泛而细腻的
+
+59
+00:02:24,959 --> 00:02:27,520
+understanding of both language and
+语言和概念理解 第三
+
+60
+00:02:27,520 --> 00:02:31,120
+concepts. And third, massive increases
+计算能力的大幅提升
+
+61
+00:02:31,120 --> 00:02:33,040
+in computational power made it possible
+使我们能够
+
+62
+00:02:33,040 --> 00:02:35,360
+to train these complex models on all
+用全部这些数据训练复杂模型
+
+63
+00:02:35,360 --> 00:02:37,680
+that data. Specialized hardware like
+专用硬件 比如
+
+64
+00:02:37,680 --> 00:02:40,560
+GPUs or graphics processing units and
+GPU 即图形处理器
+
+65
+00:02:40,560 --> 00:02:43,680
+TPUs or tensor processing units along
+以及 TPU 即张量处理器
+
+66
+00:02:43,680 --> 00:02:45,440
+with distributed computing networks
+再加上分布式计算网络
+
+67
+00:02:45,440 --> 00:02:48,160
+often called clusters enable processing
+通常称为集群 让系统能够进行
+
+68
+00:02:48,160 --> 00:02:49,840
+that would have been impossible just a
+几年前还
+
+69
+00:02:49,840 --> 00:02:52,400
+few years earlier. The combination of
+不可能完成的处理 这三个因素的结合
+
+70
+00:02:52,400 --> 00:02:54,480
+these three factors led to an important
+带来了一个重要发现
+
+71
+00:02:54,480 --> 00:02:57,280
+discovery known as the scaling laws.
+这就是所谓的规模定律
+
+72
+00:02:57,280 --> 00:02:59,200
+These empirical findings showed that as
+这些实证研究发现 随着
+
+73
+00:02:59,200 --> 00:03:01,360
+models grew larger and trained on more
+模型规模不断增大 并用更多
+
+74
+00:03:01,360 --> 00:03:04,000
+data with more computing power, their
+数据和更强的计算能力进行训练
+
+75
+00:03:04,000 --> 00:03:05,920
+performance improved in predictable
+模型的表现会以可预测的方式提升
+
+76
+00:03:05,920 --> 00:03:08,400
+ways. More surprisingly, researchers
+更令人惊讶的是 研究人员
+
+77
+00:03:08,400 --> 00:03:11,040
+found that entirely new capabilities
+发现一些全新的能力
+
+78
+00:03:11,040 --> 00:03:13,120
+began to emerge as these models grew
+开始随着模型规模扩大而涌现
+
+79
+00:03:13,120 --> 00:03:15,519
+larger. Abilities no one explicitly
+这些能力没有人明确地
+
+80
+00:03:15,519 --> 00:03:17,920
+program, like reasoning through problems
+编程实现 比如通过推理解决问题
+
+81
+00:03:17,920 --> 00:03:20,640
+stepby step or adapting to new tasks
+一步步解决问题 或者
+
+82
+00:03:20,640 --> 00:03:22,879
+with minimal instruction. Let's peek
+只需很少指令就能适应新任务 让我们看看
+
+83
+00:03:22,879 --> 00:03:24,800
+under the hood at how these systems
+这些系统在底层
+
+84
+00:03:24,800 --> 00:03:27,440
+actually work. During initial training,
+究竟是如何运作的 在最初的训练阶段
+
+85
+00:03:27,440 --> 00:03:29,920
+also called pre-training, LLMs like
+也叫预训练 像
+
+86
+00:03:29,920 --> 00:03:32,000
+Claude analyze patterns across billions
+Claude 这样的 LLM 会分析数十亿条
+
+87
+00:03:32,000 --> 00:03:34,480
+of text examples. Imagine reading every
+文本示例 想象一下 阅读你能找到的每一个
+
+88
+00:03:34,480 --> 00:03:36,000
+website and piece of text you could
+网站和文本片段
+
+89
+00:03:36,000 --> 00:03:38,239
+find, not just to absorb information,
+不是只为吸收信息
+
+90
+00:03:38,239 --> 00:03:40,000
+but to understand the statistical
+而是为了理解词语、短语
+
+91
+00:03:40,000 --> 00:03:42,319
+relationships between words, phrases,
+和概念之间的统计关系
+
+92
+00:03:42,319 --> 00:03:44,560
+and concepts. At this stage, the model
+在这个阶段 模型
+
+93
+00:03:44,560 --> 00:03:45,920
+essentially builds something like a
+基本上会构建出类似于
+
+94
+00:03:45,920 --> 00:03:48,319
+complex map of language and knowledge.
+语言与知识的复杂地图
+
+95
+00:03:48,319 --> 00:03:50,239
+This pre-training process involves
+这个预训练过程包括
+
+96
+00:03:50,239 --> 00:03:52,640
+showing the model text and asking it to
+向模型展示文本 并要求它
+
+97
+00:03:52,640 --> 00:03:54,959
+predict what comes next. Through many
+预测接下来会出现什么 经过多次
+
+98
+00:03:54,959 --> 00:03:56,799
+iterations, the model gradually
+迭代 模型会逐渐
+
+99
+00:03:56,799 --> 00:03:59,200
+refineses its predictions, learning the
+改进预测 学习那些让语言连贯且
+
+100
+00:03:59,200 --> 00:04:01,439
+patterns that make language coherent and
+有意义的模式
+
+101
+00:04:01,439 --> 00:04:04,560
+meaningful. After pre-training, models
+预训练之后 模型
+
+102
+00:04:04,560 --> 00:04:06,400
+undergo additional training called
+还会接受一种额外训练 称为
+
+103
+00:04:06,400 --> 00:04:08,239
+fine-tuning, where they learn to follow
+微调 在这个阶段 它们学习遵循
+
+104
+00:04:08,239 --> 00:04:10,720
+instructions, provide helpful responses,
+指令 提供有帮助的回答
+
+105
+00:04:10,720 --> 00:04:12,879
+and importantly, avoid generating
+更重要的是 避免生成
+
+106
+00:04:12,879 --> 00:04:15,519
+harmful content. This often involves
+有害内容 这通常会结合
+
+107
+00:04:15,519 --> 00:04:17,440
+human feedback to improve the model's
+人类反馈来提升模型的
+
+108
+00:04:17,440 --> 00:04:19,359
+performance, as well as reinforcement
+表现 以及强化
+
+109
+00:04:19,359 --> 00:04:21,600
+learning, which uses rewards and
+学习 通过奖励和
+
+110
+00:04:21,600 --> 00:04:24,160
+penalties to shape the model's behavior
+惩罚来塑造模型的行为
+
+111
+00:04:24,160 --> 00:04:27,040
+toward being more helpful, honest, and
+让它更有帮助、更诚实
+
+112
+00:04:27,040 --> 00:04:28,800
+harmless. In the case of enthropics
+且无害 对于 Anthropic 的
+
+113
+00:04:28,800 --> 00:04:30,960
+models, once models are trained, they
+模型来说 模型训练完成后
+
+114
+00:04:30,960 --> 00:04:32,720
+are then deployed for you to interact
+就会部署出来供你互动
+
+115
+00:04:32,720 --> 00:04:34,720
+with. When you interact with Claude or
+当你与 Claude 或
+
+116
+00:04:34,720 --> 00:04:37,280
+another LLM, you're providing a prompt,
+其他 LLM 互动时 你是在提供提示词
+
+117
+00:04:37,280 --> 00:04:39,199
+which is text that the model reads and
+也就是模型会读取的文本 并
+
+118
+00:04:39,199 --> 00:04:41,199
+then continues from based on patterns it
+根据训练中学到的模式继续生成
+
+119
+00:04:41,199 --> 00:04:43,199
+learned during training. The model isn't
+模型并不是
+
+120
+00:04:43,199 --> 00:04:45,040
+retrieving pre-written answers from a
+从数据库中调取预先写好的答案
+
+121
+00:04:45,040 --> 00:04:47,440
+database. Instead, it's generating new
+相反 它会生成新的
+
+122
+00:04:47,440 --> 00:04:49,360
+text that statistically follows from
+文本 其统计上承接于
+
+123
+00:04:49,360 --> 00:04:51,360
+what you've written. There's also a
+你写下的内容 另外还有一个
+
+124
+00:04:51,360 --> 00:04:53,600
+practical limit to how much information
+实际限制：LLM 一次能考虑的信息量
+
+125
+00:04:53,600 --> 00:04:56,400
+an LLM can consider at once, known as
+这被称为
+
+126
+00:04:56,400 --> 00:04:58,800
+the context window. Think of this as the
+上下文窗口 可以把它理解为
+
+127
+00:04:58,800 --> 00:05:01,440
+AI's working memory. The context window
+AI 的工作记忆 上下文窗口
+
+128
+00:05:01,440 --> 00:05:04,240
+includes your prompts, the AI responses,
+包含你的提示词、AI 的回答
+
+129
+00:05:04,240 --> 00:05:06,160
+and any other information you've shared
+以及你在对话中分享的任何其他信息
+
+130
+00:05:06,160 --> 00:05:08,960
+in your conversation. While AI companies
+虽然 AI 公司
+
+131
+00:05:08,960 --> 00:05:11,360
+continue to grow the context window to
+还在不断扩大上下文窗口
+
+132
+00:05:11,360 --> 00:05:13,680
+allow for longer context documents and
+以容纳更长的上下文文档和
+
+133
+00:05:13,680 --> 00:05:15,919
+conversations, these limits remind us
+对话 但这些限制提醒我们
+
+134
+00:05:15,919 --> 00:05:17,919
+that these systems don't have unlimited
+这些系统并不能无限
+
+135
+00:05:17,919 --> 00:05:20,240
+access to information and cannot use
+获取信息 也无法使用
+
+136
+00:05:20,240 --> 00:05:22,240
+content beyond its current context
+当前上下文
+
+137
+00:05:22,240 --> 00:05:25,199
+window without specialized tools like
+窗口之外的内容 除非借助像
+
+138
+00:05:25,199 --> 00:05:27,680
+web search. Bringing this together, the
+网络搜索这样的专用工具 把这些合在一起
+
+139
+00:05:27,680 --> 00:05:29,680
+three characteristics that make modern
+让现代生成式 AI 如此强大的
+
+140
+00:05:29,680 --> 00:05:32,400
+generative AI so powerful include,
+三个特征包括
+
+141
+00:05:32,400 --> 00:05:34,800
+first, its ability to process vast
+第一 在训练过程中处理海量
+
+142
+00:05:34,800 --> 00:05:37,280
+amounts of information during training,
+信息的能力
+
+143
+00:05:37,280 --> 00:05:39,520
+allowing it to learn complex and nuanced
+这让它能够学习语言和知识中的
+
+144
+00:05:39,520 --> 00:05:41,840
+patterns in language and knowledge.
+复杂而细腻的模式
+
+145
+00:05:41,840 --> 00:05:44,880
+Second, its incontext learning ability.
+第二 上下文学习能力
+
+146
+00:05:44,880 --> 00:05:47,120
+LLMs can adapt to new tasks based on
+LLM 可以根据提示词中的
+
+147
+00:05:47,120 --> 00:05:49,039
+instructions or examples in your prompt
+指令或示例适应新任务
+
+148
+00:05:49,039 --> 00:05:51,120
+without requiring additional training.
+而不需要额外训练
+
+149
+00:05:51,120 --> 00:05:53,440
+And third, emerging capabilities that
+第三 随着规模扩大而
+
+150
+00:05:53,440 --> 00:05:56,000
+arise from scale. As these models grow
+涌现的能力 当这些模型变得
+
+151
+00:05:56,000 --> 00:05:57,759
+larger, they develop abilities that
+更大时 它们会发展出一些
+
+152
+00:05:57,759 --> 00:06:00,080
+weren't explicitly designed into them,
+并没有被明确设计进去的能力
+
+153
+00:06:00,080 --> 00:06:01,680
+sometimes surprising even their
+有时甚至会让它们的
+
+154
+00:06:01,680 --> 00:06:03,680
+creators. In the next video, we'll
+创造者感到惊讶 下一段视频中 我们将
+
+155
+00:06:03,680 --> 00:06:05,600
+explore what these systems can and can't
+探索这些系统擅长和不擅长什么
+
+156
+00:06:05,600 --> 00:06:08,080
+do well, along with their most common or
+以及它们最常见或最有
+
+157
+00:06:08,080 --> 00:06:13,409
+valuable applications.
+价值的应用
