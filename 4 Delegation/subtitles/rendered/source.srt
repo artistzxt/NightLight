@@ -1,0 +1,511 @@
+1
+00:00:11,200 --> 00:00:13,280
+In this video, we're going to take a
+
+2
+00:00:13,280 --> 00:00:15,800
+closer look at the delegation
+
+3
+00:00:15,800 --> 00:00:18,720
+competency. Remember that AI fluency is
+
+4
+00:00:18,720 --> 00:00:20,760
+about working with AI in ways that are
+
+5
+00:00:20,760 --> 00:00:25,160
+effective, efficient, ethical, and safe.
+
+6
+00:00:25,160 --> 00:00:27,840
+Delegation is primarily focused on the
+
+7
+00:00:27,840 --> 00:00:30,080
+first two of these. Helping you work
+
+8
+00:00:30,080 --> 00:00:33,320
+effectively and efficiently with AI
+
+9
+00:00:33,320 --> 00:00:36,480
+assistance. At its core, delegation is
+
+10
+00:00:36,480 --> 00:00:38,879
+about deciding what work is to be done,
+
+11
+00:00:38,879 --> 00:00:41,040
+what work you should do yourself, and
+
+12
+00:00:41,040 --> 00:00:43,680
+what work might be better suited to AI.
+
+13
+00:00:43,680 --> 00:00:45,760
+That might sound simple, but it's
+
+14
+00:00:45,760 --> 00:00:48,320
+surprisingly nuanced. Effective
+
+15
+00:00:48,320 --> 00:00:51,039
+delegation requires understanding both
+
+16
+00:00:51,039 --> 00:00:53,440
+what you're trying to accomplish and
+
+17
+00:00:53,440 --> 00:00:55,760
+what you and AI can each realistically
+
+18
+00:00:55,760 --> 00:00:58,640
+do. It's about breaking down complex
+
+19
+00:00:58,640 --> 00:01:01,760
+work into manageable pieces and making
+
+20
+00:01:01,760 --> 00:01:04,159
+strategic decisions about who handles
+
+21
+00:01:04,159 --> 00:01:07,240
+which part, whether through automation,
+
+22
+00:01:07,240 --> 00:01:09,080
+augmentation, or
+
+23
+00:01:09,080 --> 00:01:11,119
+agency. Here's something that might
+
+24
+00:01:11,119 --> 00:01:12,799
+surprise you.
+
+25
+00:01:12,799 --> 00:01:15,360
+The cornerstone of good delegation isn't
+
+26
+00:01:15,360 --> 00:01:18,080
+actually about AI at all. It's about
+
+27
+00:01:18,080 --> 00:01:20,000
+your own expertise and your own
+
+28
+00:01:20,000 --> 00:01:21,720
+understanding of what you're trying to
+
+29
+00:01:21,720 --> 00:01:24,720
+accomplish. Before involving AI in any
+
+30
+00:01:24,720 --> 00:01:27,119
+project, take a moment to answer some
+
+31
+00:01:27,119 --> 00:01:28,200
+important
+
+32
+00:01:28,200 --> 00:01:30,400
+questions. What exactly are you trying
+
+33
+00:01:30,400 --> 00:01:32,640
+to accomplish? What are you trying to
+
+34
+00:01:32,640 --> 00:01:36,240
+create or solve? What is your vision or
+
+35
+00:01:36,240 --> 00:01:38,960
+key project goals? What does success
+
+36
+00:01:38,960 --> 00:01:40,799
+look like to you?
+
+37
+00:01:40,799 --> 00:01:42,640
+and ask yourself what kind of thinking
+
+38
+00:01:42,640 --> 00:01:45,840
+and work is needed to get there. Are
+
+39
+00:01:45,840 --> 00:01:47,799
+there areas that are simple but
+
+40
+00:01:47,799 --> 00:01:50,560
+timeconuming? Areas of uncertainty where
+
+41
+00:01:50,560 --> 00:01:52,200
+you could use a trusted thinking
+
+42
+00:01:52,200 --> 00:01:54,640
+partner? Areas of ignorance where what
+
+43
+00:01:54,640 --> 00:01:57,920
+you need is more data or areas requiring
+
+44
+00:01:57,920 --> 00:02:00,960
+critical judgment. Every project and
+
+45
+00:02:00,960 --> 00:02:03,840
+every domain is different. We can't make
+
+46
+00:02:03,840 --> 00:02:06,479
+you an expert in your problem space. But
+
+47
+00:02:06,479 --> 00:02:08,239
+we can say that without a clear
+
+48
+00:02:08,239 --> 00:02:10,520
+understanding of your goals and the work
+
+49
+00:02:10,520 --> 00:02:13,040
+involved, even the most advanced AI
+
+50
+00:02:13,040 --> 00:02:14,800
+won't get you where you need to go.
+
+51
+00:02:14,800 --> 00:02:16,560
+You'll struggle to effectively work with
+
+52
+00:02:16,560 --> 00:02:20,000
+AI assistants, evaluate their outputs,
+
+53
+00:02:20,000 --> 00:02:22,520
+or know when human intervention is
+
+54
+00:02:22,520 --> 00:02:25,239
+necessary. The most effective AI
+
+55
+00:02:25,239 --> 00:02:27,599
+collaborators are experts in their
+
+56
+00:02:27,599 --> 00:02:31,599
+fields first and AI delegators second.
+
+57
+00:02:31,599 --> 00:02:34,000
+We call this first concept problem
+
+58
+00:02:34,000 --> 00:02:37,200
+awareness. the ability to clearly define
+
+59
+00:02:37,200 --> 00:02:39,760
+your goals and understand what work is
+
+60
+00:02:39,760 --> 00:02:42,920
+needed before bringing AI into the
+
+61
+00:02:42,920 --> 00:02:45,280
+picture. Beyond understanding your
+
+62
+00:02:45,280 --> 00:02:47,280
+problem, you also need a working
+
+63
+00:02:47,280 --> 00:02:48,760
+knowledge of the AI
+
+64
+00:02:48,760 --> 00:02:51,440
+landscape. Different AI systems offer
+
+65
+00:02:51,440 --> 00:02:54,000
+vastly different capabilities and this
+
+66
+00:02:54,000 --> 00:02:57,200
+field evolves almost daily. Effective
+
+67
+00:02:57,200 --> 00:02:59,280
+delegation isn't about finding one
+
+68
+00:02:59,280 --> 00:03:01,599
+perfect system. It's about understanding
+
+69
+00:03:01,599 --> 00:03:04,080
+the unique strengths and limitations of
+
+70
+00:03:04,080 --> 00:03:06,800
+the various options available to you.
+
+71
+00:03:06,800 --> 00:03:08,800
+Have you investigated which models
+
+72
+00:03:08,800 --> 00:03:10,800
+perform best for the kind of work you
+
+73
+00:03:10,800 --> 00:03:13,200
+have in mind? Do you know which AI
+
+74
+00:03:13,200 --> 00:03:16,319
+systems prioritize speed over depth or
+
+75
+00:03:16,319 --> 00:03:17,879
+accuracy over
+
+76
+00:03:17,879 --> 00:03:20,159
+creativity? This course includes several
+
+77
+00:03:20,159 --> 00:03:22,080
+technical sections that will help you
+
+78
+00:03:22,080 --> 00:03:24,239
+build this knowledge, but the landscape
+
+79
+00:03:24,239 --> 00:03:27,120
+moves quickly. The best approach is
+
+80
+00:03:27,120 --> 00:03:29,920
+hands-on. Experiment with different AI
+
+81
+00:03:29,920 --> 00:03:32,560
+systems as often as you can and develop
+
+82
+00:03:32,560 --> 00:03:35,159
+your own insights based on personal
+
+83
+00:03:35,159 --> 00:03:38,080
+experience. We call this second concept
+
+84
+00:03:38,080 --> 00:03:40,480
+platform awareness. A working knowledge
+
+85
+00:03:40,480 --> 00:03:42,799
+of available AI systems and their
+
+86
+00:03:42,799 --> 00:03:45,319
+specific capabilities and
+
+87
+00:03:45,319 --> 00:03:48,080
+limitations. Once you understand both
+
+88
+00:03:48,080 --> 00:03:50,920
+your problem and the available AI
+
+89
+00:03:50,920 --> 00:03:53,360
+assistance, the real art of delegation
+
+90
+00:03:53,360 --> 00:03:56,319
+emerges. thoughtfully distributing work
+
+91
+00:03:56,319 --> 00:03:58,280
+between human and artificial
+
+92
+00:03:58,280 --> 00:04:00,480
+intelligence to leverage the unique
+
+93
+00:04:00,480 --> 00:04:03,319
+strengths of each. Ask
+
+94
+00:04:03,319 --> 00:04:05,760
+yourself which specific parts of your
+
+95
+00:04:05,760 --> 00:04:08,360
+workflow would benefit from
+
+96
+00:04:08,360 --> 00:04:10,480
+automation or where would an
+
+97
+00:04:10,480 --> 00:04:12,799
+augmentation approach create more value
+
+98
+00:04:12,799 --> 00:04:15,799
+than either working alone or fully
+
+99
+00:04:15,799 --> 00:04:18,000
+automating? Are there critical judgment
+
+100
+00:04:18,000 --> 00:04:20,079
+areas that should remain exclusively
+
+101
+00:04:20,079 --> 00:04:23,120
+human and shouldn't be delegated at all?
+
+102
+00:04:23,120 --> 00:04:26,000
+What routine interactions can AI agents
+
+103
+00:04:26,000 --> 00:04:28,800
+handle on your behalf? With a clear
+
+104
+00:04:28,800 --> 00:04:31,440
+understanding of both your problem and
+
+105
+00:04:31,440 --> 00:04:34,000
+available AI systems, you can make
+
+106
+00:04:34,000 --> 00:04:36,560
+informed decisions about which aspects
+
+107
+00:04:36,560 --> 00:04:40,000
+of work should be automated by AI or
+
+108
+00:04:40,000 --> 00:04:41,880
+completed through human AI
+
+109
+00:04:41,880 --> 00:04:44,560
+collaboration or reserved exclusively
+
+110
+00:04:44,560 --> 00:04:47,759
+for human execution or handled by AI
+
+111
+00:04:47,759 --> 00:04:50,880
+agents acting on your behalf. We call
+
+112
+00:04:50,880 --> 00:04:53,680
+this third concept task delegation. The
+
+113
+00:04:53,680 --> 00:04:56,000
+strategic process of dividing work
+
+114
+00:04:56,000 --> 00:04:58,360
+between humans and
+
+115
+00:04:58,360 --> 00:05:02,160
+AI. To recap, delegation involves three
+
+116
+00:05:02,160 --> 00:05:05,199
+key elements. Problem awareness,
+
+117
+00:05:05,199 --> 00:05:07,039
+understanding your goals and the problem
+
+118
+00:05:07,039 --> 00:05:10,240
+to be solved. Platform awareness,
+
+119
+00:05:10,240 --> 00:05:12,360
+understanding AI capabilities and
+
+120
+00:05:12,360 --> 00:05:15,280
+limitations. And task delegation,
+
+121
+00:05:15,280 --> 00:05:18,000
+strategically dividing the work.
+
+122
+00:05:18,000 --> 00:05:21,000
+This competency highlights something
+
+123
+00:05:21,000 --> 00:05:24,000
+important. Effective AI collaboration
+
+124
+00:05:24,000 --> 00:05:26,400
+isn't about handing over the wheel and
+
+125
+00:05:26,400 --> 00:05:29,199
+calling it a day. It's about making
+
+126
+00:05:29,199 --> 00:05:32,160
+thoughtful choices and delegating work
+
+127
+00:05:32,160 --> 00:05:34,560
+that leverages the unique strengths of
+
+128
+00:05:34,560 --> 00:05:39,479
+both human and artificial intelligence.
