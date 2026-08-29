@@ -1,0 +1,708 @@
+1
+00:00:12,559 --> 00:00:18,000
+Let's now examine what generative AI can
+
+2
+00:00:15,040 --> 00:00:20,000
+and cannot do. Focusing on LLM such as
+
+3
+00:00:18,000 --> 00:00:22,080
+Claude, think of this as getting to know
+
+4
+00:00:20,000 --> 00:00:23,920
+a new colleague. Understanding their
+
+5
+00:00:22,080 --> 00:00:26,800
+strengths and limitations help you
+
+6
+00:00:23,920 --> 00:00:28,640
+collaborate more effectively. To start,
+
+7
+00:00:26,800 --> 00:00:31,199
+we'll focus on what these systems do
+
+8
+00:00:28,640 --> 00:00:33,840
+remarkably well. You might be amazed at
+
+9
+00:00:31,199 --> 00:00:36,079
+how versatile modern language models can
+
+10
+00:00:33,840 --> 00:00:38,320
+be. They're skilled with language in
+
+11
+00:00:36,079 --> 00:00:41,040
+ways that seemed impossible just a few
+
+12
+00:00:38,320 --> 00:00:43,760
+years ago. Crafting emails that capture
+
+13
+00:00:41,040 --> 00:00:46,399
+your voice, condensing lengthy reports
+
+14
+00:00:43,760 --> 00:00:49,039
+into clear summaries, translating
+
+15
+00:00:46,399 --> 00:00:51,360
+between languages, and explaining
+
+16
+00:00:49,039 --> 00:00:54,800
+complex topics across countless fields
+
+17
+00:00:51,360 --> 00:00:56,719
+from microbiology to marketing strategy.
+
+18
+00:00:54,800 --> 00:00:59,359
+What's particularly notable is how these
+
+19
+00:00:56,719 --> 00:01:02,239
+models can shift between different tasks
+
+20
+00:00:59,359 --> 00:01:04,400
+without needing additional training. The
+
+21
+00:01:02,239 --> 00:01:06,880
+very same system that helps you write
+
+22
+00:01:04,400 --> 00:01:09,600
+poetry or brainstorm ideas for your
+
+23
+00:01:06,880 --> 00:01:11,920
+birthday party can turn around and help
+
+24
+00:01:09,600 --> 00:01:15,080
+you understand quantum computing
+
+25
+00:01:11,920 --> 00:01:19,200
+concepts or analyze quarterly business
+
+26
+00:01:15,080 --> 00:01:21,280
+trends all through simple conversation.
+
+27
+00:01:19,200 --> 00:01:22,439
+These models can also maintain the
+
+28
+00:01:21,280 --> 00:01:24,560
+thread of a
+
+29
+00:01:22,439 --> 00:01:28,240
+conversation, remembering what you
+
+30
+00:01:24,560 --> 00:01:30,000
+discussed earlier and building upon it.
+
+31
+00:01:28,240 --> 00:01:32,000
+If you mention your project deadline in
+
+32
+00:01:30,000 --> 00:01:34,720
+passing, for example, and refer back to
+
+33
+00:01:32,000 --> 00:01:36,240
+it later within the conversation, the AI
+
+34
+00:01:34,720 --> 00:01:38,240
+typically understands what you're
+
+35
+00:01:36,240 --> 00:01:41,360
+talking about, much like a human
+
+36
+00:01:38,240 --> 00:01:43,759
+conversation partner would. Many modern
+
+37
+00:01:41,360 --> 00:01:45,920
+LLMs can now also reach beyond their own
+
+38
+00:01:43,759 --> 00:01:48,560
+knowledge by connecting to external
+
+39
+00:01:45,920 --> 00:01:51,040
+tools and information sources, allowing
+
+40
+00:01:48,560 --> 00:01:52,720
+them to search the web, process files,
+
+41
+00:01:51,040 --> 00:01:54,119
+or even use other applications to
+
+42
+00:01:52,720 --> 00:01:56,479
+enhance their
+
+43
+00:01:54,119 --> 00:01:59,280
+capabilities. This dramatically expands
+
+44
+00:01:56,479 --> 00:02:02,240
+what they can help with. However, just
+
+45
+00:01:59,280 --> 00:02:03,640
+like any technology, LLMs as exist today
+
+46
+00:02:02,240 --> 00:02:06,240
+also have certain
+
+47
+00:02:03,640 --> 00:02:09,039
+limitations. First, AI models are
+
+48
+00:02:06,240 --> 00:02:11,599
+bounded by their training data. LLMs
+
+49
+00:02:09,039 --> 00:02:14,000
+have a knowledge cutoff date based on
+
+50
+00:02:11,599 --> 00:02:16,160
+when they were trained, the point after
+
+51
+00:02:14,000 --> 00:02:19,599
+which they have no innate knowledge of
+
+52
+00:02:16,160 --> 00:02:22,400
+the world. For example, a model with a
+
+53
+00:02:19,599 --> 00:02:24,640
+cut off date of November 2024 means that
+
+54
+00:02:22,400 --> 00:02:25,720
+it wasn't trained on any data after
+
+55
+00:02:24,640 --> 00:02:28,080
+November
+
+56
+00:02:25,720 --> 00:02:30,000
+2024. Imagine someone who went into a
+
+57
+00:02:28,080 --> 00:02:32,160
+retreat without internet access at a
+
+58
+00:02:30,000 --> 00:02:34,720
+specific date. They wouldn't know about
+
+59
+00:02:32,160 --> 00:02:37,280
+events that happened after they left.
+
+60
+00:02:34,720 --> 00:02:39,000
+Models need tools like web search to
+
+61
+00:02:37,280 --> 00:02:41,200
+learn more about recent
+
+62
+00:02:39,000 --> 00:02:43,760
+developments. Additionally, the training
+
+63
+00:02:41,200 --> 00:02:46,160
+process doesn't verify every fact in the
+
+64
+00:02:43,760 --> 00:02:48,000
+training data. This means models can
+
+65
+00:02:46,160 --> 00:02:50,239
+sometimes learn and reproduce
+
+66
+00:02:48,000 --> 00:02:52,480
+inaccuracies that were present in their
+
+67
+00:02:50,239 --> 00:02:54,319
+training data. They can also make
+
+68
+00:02:52,480 --> 00:02:56,959
+mistakes when trying to piece together
+
+69
+00:02:54,319 --> 00:03:00,480
+information they've learned. This leads
+
+70
+00:02:56,959 --> 00:03:02,800
+to what is often called a hallucination.
+
+71
+00:03:00,480 --> 00:03:05,400
+AI confidently stating something that
+
+72
+00:03:02,800 --> 00:03:07,680
+sounds plausible but is actually
+
+73
+00:03:05,400 --> 00:03:09,800
+incorrect. Unlike search engines that
+
+74
+00:03:07,680 --> 00:03:12,720
+simply retrieve existing
+
+75
+00:03:09,800 --> 00:03:15,040
+documents, LLMs generate responses based
+
+76
+00:03:12,720 --> 00:03:16,760
+on statistical patterns, sometimes
+
+77
+00:03:15,040 --> 00:03:18,640
+producing
+
+78
+00:03:16,760 --> 00:03:20,640
+hallucinations. Imagine a friend who
+
+79
+00:03:18,640 --> 00:03:22,480
+tells a story with absolute confidence
+
+80
+00:03:20,640 --> 00:03:25,360
+only to have the details completely
+
+81
+00:03:22,480 --> 00:03:27,200
+wrong. AI can sometimes be like that.
+
+82
+00:03:25,360 --> 00:03:29,760
+Another important constraint is the
+
+83
+00:03:27,200 --> 00:03:31,360
+context window we mentioned earlier. As
+
+84
+00:03:29,760 --> 00:03:33,720
+a reminder, that's the amount of
+
+85
+00:03:31,360 --> 00:03:36,480
+information an AI can process at one
+
+86
+00:03:33,720 --> 00:03:38,159
+time. Every LLM has a maximum limit to
+
+87
+00:03:36,480 --> 00:03:40,239
+how much information it can consider
+
+88
+00:03:38,159 --> 00:03:42,239
+during a single interaction. If this
+
+89
+00:03:40,239 --> 00:03:43,920
+limit is exceeded, the AI won't be able
+
+90
+00:03:42,239 --> 00:03:46,319
+to remember information that falls
+
+91
+00:03:43,920 --> 00:03:48,560
+outside the window, usually on a first
+
+92
+00:03:46,319 --> 00:03:50,799
+in first out basis. Depending on the
+
+93
+00:03:48,560 --> 00:03:52,720
+size of the model, this can limit its
+
+94
+00:03:50,799 --> 00:03:54,760
+ability to process large documents or
+
+95
+00:03:52,720 --> 00:03:57,200
+remember the entire conversation.
+
+96
+00:03:54,760 --> 00:03:59,439
+Furthermore, unlike traditional software
+
+97
+00:03:57,200 --> 00:04:02,319
+that produces identical outputs given
+
+98
+00:03:59,439 --> 00:04:06,120
+the same inputs, LLM are somewhat
+
+99
+00:04:02,319 --> 00:04:08,080
+unpredictable by default, also known as
+
+100
+00:04:06,120 --> 00:04:09,840
+non-deterministic. Ask the same question
+
+101
+00:04:08,080 --> 00:04:12,080
+twice and you might get slightly
+
+102
+00:04:09,840 --> 00:04:14,480
+different responses each time. This
+
+103
+00:04:12,080 --> 00:04:16,880
+variability stems from the nature of how
+
+104
+00:04:14,480 --> 00:04:19,040
+these models generate text. They're
+
+105
+00:04:16,880 --> 00:04:21,120
+making probabilistic decisions about
+
+106
+00:04:19,040 --> 00:04:23,199
+what text should come next based on
+
+107
+00:04:21,120 --> 00:04:25,240
+patterns in their training data and
+
+108
+00:04:23,199 --> 00:04:28,000
+certain settings that developers can
+
+109
+00:04:25,240 --> 00:04:30,000
+tweak. This creative variability can be
+
+110
+00:04:28,000 --> 00:04:33,040
+great for brainstorming and generating
+
+111
+00:04:30,000 --> 00:04:36,040
+diverse ideas, but requires awareness
+
+112
+00:04:33,040 --> 00:04:39,360
+when consistency or accuracy are
+
+113
+00:04:36,040 --> 00:04:41,479
+critical. Some LLM interfaces also offer
+
+114
+00:04:39,360 --> 00:04:44,000
+settings to control this randomness when
+
+115
+00:04:41,479 --> 00:04:46,560
+needed. This setting is often referred
+
+116
+00:04:44,000 --> 00:04:49,040
+to as temperature. Additionally, while
+
+117
+00:04:46,560 --> 00:04:51,040
+these models are improving rapidly,
+
+118
+00:04:49,040 --> 00:04:53,360
+they've historically shown limitations
+
+119
+00:04:51,040 --> 00:04:55,280
+with complex reasoning tasks,
+
+120
+00:04:53,360 --> 00:04:57,720
+particularly with mathematical or
+
+121
+00:04:55,280 --> 00:05:00,400
+logical problems requiring multiple
+
+122
+00:04:57,720 --> 00:05:02,960
+steps. The good news is that newer
+
+123
+00:05:00,400 --> 00:05:05,120
+reasoning or extended thinking models
+
+124
+00:05:02,960 --> 00:05:07,759
+specifically designed to think stepby
+
+125
+00:05:05,120 --> 00:05:10,800
+step are showing strong progress in
+
+126
+00:05:07,759 --> 00:05:12,759
+these areas. And finally, while models
+
+127
+00:05:10,800 --> 00:05:15,280
+like Claude can now access external
+
+128
+00:05:12,759 --> 00:05:17,440
+tools, they may still lack access to
+
+129
+00:05:15,280 --> 00:05:19,440
+specific data sources or specialized
+
+130
+00:05:17,440 --> 00:05:21,520
+tools that would be needed for certain
+
+131
+00:05:19,440 --> 00:05:23,600
+tasks. It's like having a brilliant
+
+132
+00:05:21,520 --> 00:05:26,160
+colleague who can't access your
+
+133
+00:05:23,600 --> 00:05:28,000
+company's internal database. Their
+
+134
+00:05:26,160 --> 00:05:30,639
+ability to help will be limited no
+
+135
+00:05:28,000 --> 00:05:32,639
+matter how smart they are. If a model
+
+136
+00:05:30,639 --> 00:05:34,479
+doesn't have access to a piece of data
+
+137
+00:05:32,639 --> 00:05:36,560
+or tool that is needed to answer a
+
+138
+00:05:34,479 --> 00:05:38,880
+question, then it should not come as a
+
+139
+00:05:36,560 --> 00:05:41,199
+surprise that it won't be able to help
+
+140
+00:05:38,880 --> 00:05:44,240
+answer the question. The field of
+
+141
+00:05:41,199 --> 00:05:45,840
+generative AI is rapidly evolving.
+
+142
+00:05:44,240 --> 00:05:48,320
+Researchers are working to address
+
+143
+00:05:45,840 --> 00:05:51,199
+current limitations through techniques
+
+144
+00:05:48,320 --> 00:05:54,080
+like retrieval augmented generation
+
+145
+00:05:51,199 --> 00:05:56,560
+which connects models to external
+
+146
+00:05:54,080 --> 00:05:59,120
+knowledge and data sources as well as
+
+147
+00:05:56,560 --> 00:06:01,440
+expanding their ability to use tools and
+
+148
+00:05:59,120 --> 00:06:04,000
+improving their reasoning capabilities.
+
+149
+00:06:01,440 --> 00:06:06,560
+That said, some limitations will likely
+
+150
+00:06:04,000 --> 00:06:08,000
+remain for the foreseeable future, even
+
+151
+00:06:06,560 --> 00:06:10,400
+if we don't know exactly what those
+
+152
+00:06:08,000 --> 00:06:13,560
+limitations will be. Understanding what
+
+153
+00:06:10,400 --> 00:06:16,319
+AI can or cannot do is essential for AI
+
+154
+00:06:13,560 --> 00:06:18,560
+fluency and helps you determine when and
+
+155
+00:06:16,319 --> 00:06:20,560
+how to best incorporate these systems
+
+156
+00:06:18,560 --> 00:06:22,479
+effectively into your work and daily
+
+157
+00:06:20,560 --> 00:06:23,919
+life. The most effective applications
+
+158
+00:06:22,479 --> 00:06:26,639
+will leverage the complimentary
+
+159
+00:06:23,919 --> 00:06:29,360
+strengths of humans and AI. We bring
+
+160
+00:06:26,639 --> 00:06:31,600
+critical thinking, judgment, creativity,
+
+161
+00:06:29,360 --> 00:06:33,919
+and ethical oversight that AI may
+
+162
+00:06:31,600 --> 00:06:36,800
+struggle to replicate. While AI offers
+
+163
+00:06:33,919 --> 00:06:38,960
+speed, scale, pattern recognition, and
+
+164
+00:06:36,800 --> 00:06:40,800
+the ability to process vast amounts of
+
+165
+00:06:38,960 --> 00:06:42,919
+information. These complimentary
+
+166
+00:06:40,800 --> 00:06:45,520
+strengths will evolve as the technology
+
+167
+00:06:42,919 --> 00:06:48,160
+evolves. That's why continued learning
+
+168
+00:06:45,520 --> 00:06:49,840
+and experimentation are so valuable.
+
+169
+00:06:48,160 --> 00:06:52,240
+They help you stay a breast of these
+
+170
+00:06:49,840 --> 00:06:54,880
+changes and discover new possibilities.
+
+171
+00:06:52,240 --> 00:06:56,319
+In these exercises across this course,
+
+172
+00:06:54,880 --> 00:06:58,560
+you'll have a chance to explore these
+
+173
+00:06:56,319 --> 00:07:01,759
+concepts firsthand through conversations
+
+174
+00:06:58,560 --> 00:07:04,240
+with Claude. This direct experience will
+
+175
+00:07:01,759 --> 00:07:07,280
+help you develop an intuitive feel for
+
+176
+00:07:04,240 --> 00:07:11,560
+what generative AI can do, can't do, and
+
+177
+00:07:07,280 --> 00:07:11,560
+how best to work with it.
+
