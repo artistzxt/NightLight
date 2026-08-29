@@ -1,0 +1,115 @@
+1
+00:00:00,080 --> 00:00:06,839
+Let's begin our exploration of the AI
+fluency
+让我们开始探索 AI 流畅度
+
+2
+00:00:06,839 --> 00:00:09,280
+framework. I'm Joe Feller. My name is
+框架 我是 Joe Feller 我的名字是
+
+3
+00:00:09,280 --> 00:00:16,760
+Drew. I'm Maggie Vo. My name is Rick
+Drew 我是 Maggie Vo 我的名字是 Rick
+
+4
+00:00:16,760 --> 00:00:19,520
+Dacon. The focus of this course is not
+Dacon 这门课程的重点并不是
+
+5
+00:00:19,520 --> 00:00:21,600
+really about AI as a technology.
+真正讨论 AI 这项技术
+
+6
+00:00:21,600 --> 00:00:23,840
+Instead, it's mostly about you and I, us
+相反 它主要讨论你和我 我们
+
+7
+00:00:23,840 --> 00:00:25,600
+humans, and how we interact and
+人类 以及我们如何与 AI 互动并
+
+8
+00:00:25,600 --> 00:00:28,400
+collaborate with AI systems. We explore
+协作 我们会探索
+
+9
+00:00:28,400 --> 00:00:30,560
+AI fluency, our ability to engage with
+AI 流畅度 也就是我们与
+
+10
+00:00:30,560 --> 00:00:32,559
+AI systems in ways that are effective,
+AI 系统互动的能力 方式要做到有效
+
+11
+00:00:32,559 --> 00:00:35,440
+efficient, ethical, and safe. It's about
+高效 合乎伦理且安全 这关乎
+
+12
+00:00:35,440 --> 00:00:37,600
+imagining possibilities that don't treat
+想象各种可能性 而不是把
+
+13
+00:00:37,600 --> 00:00:40,079
+AI as some sort of next level spellch
+AI 当成某种升级版拼写检查器
+
+14
+00:00:40,079 --> 00:00:41,920
+checker, but instead as a trusted
+而是把它视为值得信赖的
+
+15
+00:00:41,920 --> 00:00:43,760
+partner for doing creative and
+创意和
+
+16
+00:00:43,760 --> 00:00:46,320
+innovative problem solving work. This
+创新性问题解决工作的伙伴 这
+
+17
+00:00:46,320 --> 00:00:48,399
+will help you develop an intuitive feel
+将帮助你培养直觉般的感受
+
+18
+00:00:48,399 --> 00:00:50,800
+for what generative AI can do and how
+了解生成式 AI 能做什么 以及
+
+19
+00:00:50,800 --> 00:00:52,800
+best to work with it. We're all learning
+如何最好地与它协作 我们都在学习
+
+20
+00:00:52,800 --> 00:00:54,800
+together how to navigate this rapidly
+如何共同应对这片快速
+
+21
+00:00:54,800 --> 00:00:57,600
+evolving landscape. This course is about
+不断演变的领域 这门课程旨在
+
+22
+00:00:57,600 --> 00:01:00,000
+fundamentally shifting how we approach
+从根本上改变我们处理
+
+23
+00:01:00,000 --> 00:01:03,000
+AI.
+AI 的方式

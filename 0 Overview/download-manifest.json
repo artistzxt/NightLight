@@ -1,0 +1,150 @@
+{
+  "artifacts": {
+    "cover": {
+      "extension": "jpg",
+      "path": "封面-AI Fluency_ Framework & Foundations Course Trailer.jpg",
+      "sha256": "1636b6adc995432be92f22c1dd63f3778226fa8277061be0d976ad1872f1cc55",
+      "size_bytes": 51552
+    },
+    "intermediate": {
+      "extension": "mkv",
+      "path": "AI Fluency_ Framework & Foundations Course Trailer [-UN9sNqQ0t4].intermediate.mkv",
+      "size_bytes": 2765548
+    },
+    "lossless_mp4_master": {
+      "extension": "mp4",
+      "path": "AI Fluency_ Framework & Foundations Course Trailer [-UN9sNqQ0t4].master.mp4",
+      "size_bytes": 2776828
+    },
+    "lossy_mp4_fallback": {
+      "audio_encoding": null,
+      "created": null,
+      "reason_not_created": null,
+      "requested": false,
+      "video_encoding": null
+    },
+    "media_streams": [
+      {
+        "avg_frame_rate": "25/1",
+        "codec_name": "h264",
+        "codec_type": "video",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "height": 360,
+        "index": 0,
+        "level": 30,
+        "pix_fmt": "yuv420p",
+        "profile": "Main",
+        "r_frame_rate": "25/1",
+        "width": 640
+      },
+      {
+        "avg_frame_rate": "0/0",
+        "channels": 2,
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "index": 1,
+        "profile": "LC",
+        "r_frame_rate": "0/0",
+        "sample_rate": "44100"
+      }
+    ],
+    "subtitle": {
+      "kind": "automatic",
+      "language": "en-orig",
+      "original": {
+        "content_role": "immutable-parent",
+        "extension": "srt",
+        "path": "AI Fluency_ Framework & Foundations Course Trailer [-UN9sNqQ0t4].source-original.en-orig.en-orig.srt",
+        "sha256": "0b293d34c7b3a60b180be8343b0bcead4e10dad38aa4c15b3d0a8b4aaca39fa8",
+        "size_bytes": 1739
+      },
+      "original_is_never_modified_by_this_script": true,
+      "source_srt": {
+        "conversion_method": "byte-copy",
+        "derived_from": {
+          "path": "AI Fluency_ Framework & Foundations Course Trailer [-UN9sNqQ0t4].source-original.en-orig.en-orig.srt",
+          "sha256": "0b293d34c7b3a60b180be8343b0bcead4e10dad38aa4c15b3d0a8b4aaca39fa8"
+        },
+        "extension": "srt",
+        "path": "AI Fluency_ Framework & Foundations Course Trailer [-UN9sNqQ0t4].source-srt.en-orig.srt",
+        "sha256": "0b293d34c7b3a60b180be8343b0bcead4e10dad38aa4c15b3d0a8b4aaca39fa8",
+        "size_bytes": 1739
+      }
+    }
+  },
+  "authentication": {
+    "browser_cookies_used": false,
+    "cookie_export_created": false,
+    "mode": "anonymous"
+  },
+  "created_at": "2026-08-29T07:55:18.421209+00:00",
+  "deliverable": "full",
+  "delivery_names": {
+    "bilingual_video": "双语字幕版「AI Fluency_ Framework & Foundations Course Trailer」.mp4",
+    "cover": "封面-AI Fluency_ Framework & Foundations Course Trailer.jpg"
+  },
+  "execution": {
+    "complete": false,
+    "next_stage": "translation_required",
+    "resume": false,
+    "subtitle_manifest": "C:\\Users\\Administrator\\Documents\\ChatGPT\\New project\\jzsub_jobs\\-UN9sNqQ0t4\\subtitles\\subtitle-manifest.json",
+    "translation_batch_count": 1
+  },
+  "output_directory": "C:\\Users\\Administrator\\Documents\\ChatGPT\\New project\\jzsub_jobs\\-UN9sNqQ0t4",
+  "remote_components": {
+    "ejs_allowed": true,
+    "ejs_source": "npm"
+  },
+  "schema_version": 1,
+  "selection": {
+    "format": "bv*+ba/b",
+    "intermediate_container": "mkv",
+    "playlist_allowed": false,
+    "subtitle": {
+      "available_formats": [
+        "json3",
+        "srv1",
+        "srv2",
+        "srv3",
+        "ttml",
+        "srt",
+        "vtt"
+      ],
+      "kind": "automatic",
+      "language": "en-orig",
+      "original_format": "srt"
+    },
+    "subtitle_candidates": [
+      {
+        "formats": [
+          "json3",
+          "srv1",
+          "srv2",
+          "srv3",
+          "ttml",
+          "srt",
+          "vtt"
+        ],
+        "kind": "automatic",
+        "language": "en-orig"
+      }
+    ]
+  },
+  "source": {
+    "declared_language": "en-US",
+    "duration_seconds": 68,
+    "extractor": "Youtube",
+    "height": 1080,
+    "id": "-UN9sNqQ0t4",
+    "title": "AI Fluency: Framework & Foundations Course Trailer",
+    "url": "https://www.youtube.com/watch?v=-UN9sNqQ0t4",
+    "width": 1920
+  },
+  "status": "bilingual_required",
+  "target_language": "zh-CN",
+  "warnings": [
+    "WARNING: [youtube] -UN9sNqQ0t4: mweb client https formats require a GVS PO Token <redacted>"
+  ]
+}

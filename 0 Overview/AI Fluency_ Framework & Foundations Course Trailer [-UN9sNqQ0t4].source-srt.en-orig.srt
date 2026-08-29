@@ -1,0 +1,104 @@
+1
+00:00:00,080 --> 00:00:02,770
+Let's begin our exploration of the AI
+
+2
+00:00:02,000 --> 00:00:06,839
+fluency
+
+3
+00:00:02,770 --> 00:00:09,280
+[Music]
+
+4
+00:00:06,839 --> 00:00:12,300
+framework. I'm Joe Feller. My name is
+
+5
+00:00:09,280 --> 00:00:16,760
+Drew. I'm Maggie Vo. My name is Rick
+
+6
+00:00:12,300 --> 00:00:19,520
+[Music]
+
+7
+00:00:16,760 --> 00:00:21,600
+Dacon. The focus of this course is not
+
+8
+00:00:19,520 --> 00:00:23,840
+really about AI as a technology.
+
+9
+00:00:21,600 --> 00:00:25,600
+Instead, it's mostly about you and I, us
+
+10
+00:00:23,840 --> 00:00:28,400
+humans, and how we interact and
+
+11
+00:00:25,600 --> 00:00:30,560
+collaborate with AI systems. We explore
+
+12
+00:00:28,400 --> 00:00:32,559
+AI fluency, our ability to engage with
+
+13
+00:00:30,560 --> 00:00:35,440
+AI systems in ways that are effective,
+
+14
+00:00:32,559 --> 00:00:37,600
+efficient, ethical, and safe. It's about
+
+15
+00:00:35,440 --> 00:00:40,079
+imagining possibilities that don't treat
+
+16
+00:00:37,600 --> 00:00:41,920
+AI as some sort of next level spellch
+
+17
+00:00:40,079 --> 00:00:43,760
+checker, but instead as a trusted
+
+18
+00:00:41,920 --> 00:00:46,320
+partner for doing creative and
+
+19
+00:00:43,760 --> 00:00:48,399
+innovative problem solving work. This
+
+20
+00:00:46,320 --> 00:00:50,800
+will help you develop an intuitive feel
+
+21
+00:00:48,399 --> 00:00:52,800
+for what generative AI can do and how
+
+22
+00:00:50,800 --> 00:00:54,800
+best to work with it. We're all learning
+
+23
+00:00:52,800 --> 00:00:57,600
+together how to navigate this rapidly
+
+24
+00:00:54,800 --> 00:01:00,000
+evolving landscape. This course is about
+
+25
+00:00:57,600 --> 00:01:03,000
+fundamentally shifting how we approach
+
+26
+00:01:00,000 --> 00:01:03,000
+AI.
+

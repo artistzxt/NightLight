@@ -1,0 +1,149 @@
+{
+  "artifacts": {
+    "cover": {
+      "extension": "jpg",
+      "path": "封面-Lesson 1_ Introduction to AI Fluency _ AI Fluency_ Framework & Foundations Course.jpg",
+      "sha256": "5a8622722dd2156120dea1d42f93f23ef7de79f528b3189c693dc0df464432ab",
+      "size_bytes": 51563
+    },
+    "intermediate": {
+      "extension": "mkv",
+      "path": "Lesson 1_ Introduction to AI Fluency _ AI Fluency_ Framework & Foundations Course [JpGtOfSgR-c].intermediate.mkv",
+      "size_bytes": 63745776
+    },
+    "lossless_mp4_master": {
+      "extension": "mp4",
+      "path": "Lesson 1_ Introduction to AI Fluency _ AI Fluency_ Framework & Foundations Course [JpGtOfSgR-c].master.mp4",
+      "size_bytes": 63737789
+    },
+    "lossy_mp4_fallback": {
+      "audio_encoding": null,
+      "created": null,
+      "reason_not_created": null,
+      "requested": false,
+      "video_encoding": null
+    },
+    "media_streams": [
+      {
+        "avg_frame_rate": "25/1",
+        "codec_name": "vp9",
+        "codec_type": "video",
+        "color_primaries": "bt709",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "height": 1080,
+        "index": 0,
+        "level": -99,
+        "pix_fmt": "yuv420p",
+        "profile": "Profile 0",
+        "r_frame_rate": "25/1",
+        "width": 1920
+      },
+      {
+        "avg_frame_rate": "0/0",
+        "channels": 2,
+        "codec_name": "opus",
+        "codec_type": "audio",
+        "index": 1,
+        "r_frame_rate": "0/0",
+        "sample_rate": "48000"
+      }
+    ],
+    "subtitle": {
+      "kind": "automatic",
+      "language": "en-orig",
+      "original": {
+        "content_role": "immutable-parent",
+        "extension": "srt",
+        "path": "Lesson 1_ Introduction to AI Fluency _ AI Fluency_ Framework & Foundations Course [JpGtOfSgR-c].source-original.en-orig.en-orig.srt",
+        "sha256": "15583e2d5be2b3b24b72ed56522bf4dd9a17ae21fe503a758b260b9e0b559af7",
+        "size_bytes": 7487
+      },
+      "original_is_never_modified_by_this_script": true,
+      "source_srt": {
+        "conversion_method": "byte-copy",
+        "derived_from": {
+          "path": "Lesson 1_ Introduction to AI Fluency _ AI Fluency_ Framework & Foundations Course [JpGtOfSgR-c].source-original.en-orig.en-orig.srt",
+          "sha256": "15583e2d5be2b3b24b72ed56522bf4dd9a17ae21fe503a758b260b9e0b559af7"
+        },
+        "extension": "srt",
+        "path": "Lesson 1_ Introduction to AI Fluency _ AI Fluency_ Framework & Foundations Course [JpGtOfSgR-c].source-srt.en-orig.srt",
+        "sha256": "15583e2d5be2b3b24b72ed56522bf4dd9a17ae21fe503a758b260b9e0b559af7",
+        "size_bytes": 7487
+      }
+    }
+  },
+  "authentication": {
+    "browser_cookies_used": false,
+    "cookie_export_created": false,
+    "mode": "anonymous"
+  },
+  "created_at": "2026-08-23T10:57:10.674959+00:00",
+  "deliverable": "full",
+  "delivery_names": {
+    "bilingual_video": "双语字幕版「Lesson 1_ Introduction to AI Fluency _ AI Fluency_ Framework & Foundations Course」.mp4",
+    "cover": "封面-Lesson 1_ Introduction to AI Fluency _ AI Fluency_ Framework & Foundations Course.jpg"
+  },
+  "execution": {
+    "complete": false,
+    "next_stage": "translation_required",
+    "resume": true,
+    "subtitle_manifest": "C:\\Users\\Administrator\\Documents\\ChatGPT\\New project\\jzsub_jobs\\JpGtOfSgR-c\\subtitles\\subtitle-manifest.json",
+    "translation_batch_count": 2
+  },
+  "output_directory": "C:\\Users\\Administrator\\Documents\\ChatGPT\\New project\\jzsub_jobs\\JpGtOfSgR-c",
+  "remote_components": {
+    "ejs_allowed": false,
+    "ejs_source": null
+  },
+  "schema_version": 1,
+  "selection": {
+    "format": "bv*+ba/b",
+    "intermediate_container": "mkv",
+    "playlist_allowed": false,
+    "subtitle": {
+      "available_formats": [
+        "json3",
+        "srv1",
+        "srv2",
+        "srv3",
+        "ttml",
+        "srt",
+        "vtt"
+      ],
+      "kind": "automatic",
+      "language": "en-orig",
+      "original_format": "srt"
+    },
+    "subtitle_candidates": [
+      {
+        "formats": [
+          "json3",
+          "srv1",
+          "srv2",
+          "srv3",
+          "ttml",
+          "srt",
+          "vtt"
+        ],
+        "kind": "automatic",
+        "language": "en-orig"
+      }
+    ]
+  },
+  "source": {
+    "declared_language": "en-US",
+    "duration_seconds": 262,
+    "extractor": "Youtube",
+    "height": 1080,
+    "id": "JpGtOfSgR-c",
+    "title": "Lesson 1: Introduction to AI Fluency | AI Fluency: Framework & Foundations Course |",
+    "url": "https://www.youtube.com/watch?v=JpGtOfSgR-c",
+    "width": 1920
+  },
+  "status": "bilingual_required",
+  "target_language": "zh-CN",
+  "warnings": [
+    "WARNING: [youtube] SocksHTTPSConnectionPool(host='www.youtube.com', port=443): Read timed out. (read timeout=20.0). Retrying (1/3)..."
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "cues": [
+    {
+      "cue_sha256": "bd8fa44a1657a2581117ce91e49cb856af300b0e0a72648183e746461f1f7f29",
+      "end_ms": 2770,
+      "id": "cue-000001-bd8fa44a1657",
+      "original_index": "1",
+      "position": 1,
+      "settings": "",
+      "start_ms": 80,
+      "text": "Let's begin our exploration of the AI",
+      "text_sha256": "9811f522d1d64ce53afaabdfd555af37e1e4e08337fec823b332df0718fb8940",
+      "timing_line": "00:00:00,080 --> 00:00:02,770"
+    },
+    {
+      "cue_sha256": "e7f1ff74eed41e7bfe74042030f07122382b6414083d68c709aec41261aa63db",
+      "end_ms": 6839,
+      "id": "cue-000002-e7f1ff74eed4",
+      "original_index": "2",
+      "position": 2,
+      "settings": "",
+      "start_ms": 2000,
+      "text": "fluency",
+      "text_sha256": "129df964b701d0b8e72fe7224cc71643cf8e000d122e72f742747708f5e3bb62",
+      "timing_line": "00:00:02,000 --> 00:00:06,839"
+    },
+    {
+      "cue_sha256": "3d547bce0792db6f4d106eb9fbe53cc5e6be42a3ce1b16afc6dbc26cc7a17b78",
+      "end_ms": 12300,
+      "id": "cue-000004-3d547bce0792",
+      "original_index": "4",
+      "position": 4,
+      "settings": "",
+      "start_ms": 6839,
+      "text": "framework. I'm Joe Feller. My name is",
+      "text_sha256": "fd7e807019aee3c1f90e205e397f618beb04482adc7b2c947da326205a940436",
+      "timing_line": "00:00:06,839 --> 00:00:12,300"
+    },
+    {
+      "cue_sha256": "5cde89d2605ebc66f7fc3716c0108e27e6b2bfd2ef4cf84fa56fc6463e90884a",
+      "end_ms": 16760,
+      "id": "cue-000005-5cde89d2605e",
+      "original_index": "5",
+      "position": 5,
+      "settings": "",
+      "start_ms": 9280,
+      "text": "Drew. I'm Maggie Vo. My name is Rick",
+      "text_sha256": "3ec5d6d8a3175db74079471fc206a63bac54c74f01e1716d0e0fe0504887c45b",
+      "timing_line": "00:00:09,280 --> 00:00:16,760"
+    },
+    {
+      "cue_sha256": "8124ed67fb15909f35e4b3d01694b979ad04312acf48fd05988c43b26e161284",
+      "end_ms": 21600,
+      "id": "cue-000007-8124ed67fb15",
+      "original_index": "7",
+      "position": 7,
+      "settings": "",
+      "start_ms": 16760,
+      "text": "Dacon. The focus of this course is not",
+      "text_sha256": "769b6157fa73baaeb328b369c7d02428577798309303b9ab82fc73c772afd98d",
+      "timing_line": "00:00:16,760 --> 00:00:21,600"
+    },
+    {
+      "cue_sha256": "37daf9c2ef5a20e2e1b35929c8544ec171152a0da6c2614cbb6fd873d6a0a05a",
+      "end_ms": 23840,
+      "id": "cue-000008-37daf9c2ef5a",
+      "original_index": "8",
+      "position": 8,
+      "settings": "",
+      "start_ms": 19520,
+      "text": "really about AI as a technology.",
+      "text_sha256": "49d3cf13ea6ac710ae30f5db2e83f7a12479c7b19b72a929bcda29f5cb673e93",
+      "timing_line": "00:00:19,520 --> 00:00:23,840"
+    },
+    {
+      "cue_sha256": "f9e44cc9bb97f910ba08546326bbcab15a15006170030be713e09165e8e517fe",
+      "end_ms": 25600,
+      "id": "cue-000009-f9e44cc9bb97",
+      "original_index": "9",
+      "position": 9,
+      "settings": "",
+      "start_ms": 21600,
+      "text": "Instead, it's mostly about you and I, us",
+      "text_sha256": "ca8d319eb4b2672dc2221c19f1baf52fed2df21568613bb028157781dc51042f",
+      "timing_line": "00:00:21,600 --> 00:00:25,600"
+    },
+    {
+      "cue_sha256": "17c86e1376f9249cd3188c6d452706f8719a97040f562b0621d4106982642bf0",
+      "end_ms": 28400,
+      "id": "cue-000010-17c86e1376f9",
+      "original_index": "10",
+      "position": 10,
+      "settings": "",
+      "start_ms": 23840,
+      "text": "humans, and how we interact and",
+      "text_sha256": "c94c7eda2b19c31800ea9118cd426375e589d3b51c0833364c347759b811fbe5",
+      "timing_line": "00:00:23,840 --> 00:00:28,400"
+    },
+    {
+      "cue_sha256": "218f5f5c3e719a4889b7a56d5301a706e5525aef7427aba79beaee50c176328e",
+      "end_ms": 30560,
+      "id": "cue-000011-218f5f5c3e71",
+      "original_index": "11",
+      "position": 11,
+      "settings": "",
+      "start_ms": 25600,
+      "text": "collaborate with AI systems. We explore",
+      "text_sha256": "a68722c6cd83a567020f91f0932415db2e61bd7458eea9c2c2f8dcd3e02b1cd8",
+      "timing_line": "00:00:25,600 --> 00:00:30,560"
+    },
+    {
+      "cue_sha256": "f844d419d7edcba4118f412b7f7688fbe26b232f420027c62bdd6a0199a82470",
+      "end_ms": 32559,
+      "id": "cue-000012-f844d419d7ed",
+      "original_index": "12",
+      "position": 12,
+      "settings": "",
+      "start_ms": 28400,
+      "text": "AI fluency, our ability to engage with",
+      "text_sha256": "ff500fdb82bd02ff1f76715a841da1872f13a8f3bf6f9fdc361d33eeec42721d",
+      "timing_line": "00:00:28,400 --> 00:00:32,559"
+    },
+    {
+      "cue_sha256": "8ab64a45bf58714a3eadbf5461025ca323195b9fd600023a3dae00d1b5b4b80d",
+      "end_ms": 35440,
+      "id": "cue-000013-8ab64a45bf58",
+      "original_index": "13",
+      "position": 13,
+      "settings": "",
+      "start_ms": 30560,
+      "text": "AI systems in ways that are effective,",
+      "text_sha256": "1ee10bc16fb24321c26d66db15dc491c0f35713033ee9aa52113cc35cf8c4a51",
+      "timing_line": "00:00:30,560 --> 00:00:35,440"
+    },
+    {
+      "cue_sha256": "9aeeab87867b694031abe1097af501e0c5f87a08fadd05bfafe6e214d1aa15de",
+      "end_ms": 37600,
+      "id": "cue-000014-9aeeab87867b",
+      "original_index": "14",
+      "position": 14,
+      "settings": "",
+      "start_ms": 32559,
+      "text": "efficient, ethical, and safe. It's about",
+      "text_sha256": "9269841a7b8208b08bd200182af864bc4650e68bfb6359ecc492d292837742c7",
+      "timing_line": "00:00:32,559 --> 00:00:37,600"
+    },
+    {
+      "cue_sha256": "4562284dc3a99e82ad2911d733f42451e69c43580f0103551a524ce0f1b517bc",
+      "end_ms": 40079,
+      "id": "cue-000015-4562284dc3a9",
+      "original_index": "15",
+      "position": 15,
+      "settings": "",
+      "start_ms": 35440,
+      "text": "imagining possibilities that don't treat",
+      "text_sha256": "fe3890c5de8a73f960550df3137128d56d2265417399ca65e906c736355dce21",
+      "timing_line": "00:00:35,440 --> 00:00:40,079"
+    },
+    {
+      "cue_sha256": "fd965b8248105542842413a8f2d1738694a8e2df7bd142f254bab31a576a69bc",
+      "end_ms": 41920,
+      "id": "cue-000016-fd965b824810",
+      "original_index": "16",
+      "position": 16,
+      "settings": "",
+      "start_ms": 37600,
+      "text": "AI as some sort of next level spellch",
+      "text_sha256": "920ef3bc0deebcdd8a1b76fdae68c889ea5f288bbc2f3e169d164d9a184583c8",
+      "timing_line": "00:00:37,600 --> 00:00:41,920"
+    },
+    {
+      "cue_sha256": "6988cbfafd4686d9b3f29cae39645ff2334eb48257b1b284f17a1175cd11706d",
+      "end_ms": 43760,
+      "id": "cue-000017-6988cbfafd46",
+      "original_index": "17",
+      "position": 17,
+      "settings": "",
+      "start_ms": 40079,
+      "text": "checker, but instead as a trusted",
+      "text_sha256": "8d1ac69f8bae60bb4c1de25f378ff5d8a45505069d6258845b848492ad1e77c0",
+      "timing_line": "00:00:40,079 --> 00:00:43,760"
+    },
+    {
+      "cue_sha256": "5e60678a9b730af33ed9a811269d2728b3ec786e995c3577e6275ab09d7a38cb",
+      "end_ms": 46320,
+      "id": "cue-000018-5e60678a9b73",
+      "original_index": "18",
+      "position": 18,
+      "settings": "",
+      "start_ms": 41920,
+      "text": "partner for doing creative and",
+      "text_sha256": "7353d8273311dab42b37b4a342a4fa676b1ed129c6bff06b735dc01406ee649e",
+      "timing_line": "00:00:41,920 --> 00:00:46,320"
+    },
+    {
+      "cue_sha256": "ece3bed30dda8d4f45a2258719e67dc65f31292327e06a3053128c4210e79cb0",
+      "end_ms": 48399,
+      "id": "cue-000019-ece3bed30dda",
+      "original_index": "19",
+      "position": 19,
+      "settings": "",
+      "start_ms": 43760,
+      "text": "innovative problem solving work. This",
+      "text_sha256": "4cf79e7f2edcb365a830fd3caaa8d1f072be578018eb4c618aec1d48c4ba594e",
+      "timing_line": "00:00:43,760 --> 00:00:48,399"
+    },
+    {
+      "cue_sha256": "f6b48daea4f5568c407276d4e249428f019da3242e14be2d5d4857a7d0c7de30",
+      "end_ms": 50800,
+      "id": "cue-000020-f6b48daea4f5",
+      "original_index": "20",
+      "position": 20,
+      "settings": "",
+      "start_ms": 46320,
+      "text": "will help you develop an intuitive feel",
+      "text_sha256": "106c63ea00cd966b249c906b4e26d1d0191f0cd8e9e77af51aac98de2d52d2dd",
+      "timing_line": "00:00:46,320 --> 00:00:50,800"
+    },
+    {
+      "cue_sha256": "f545f0790f9d78d99e49fab015601fa115fd460177359fb0c884058845e846ca",
+      "end_ms": 52800,
+      "id": "cue-000021-f545f0790f9d",
+      "original_index": "21",
+      "position": 21,
+      "settings": "",
+      "start_ms": 48399,
+      "text": "for what generative AI can do and how",
+      "text_sha256": "ff67a87b1e739b8aefedb5112816f8128c5f2ba7dd8caa13987f7be7ea9b2f57",
+      "timing_line": "00:00:48,399 --> 00:00:52,800"
+    },
+    {
+      "cue_sha256": "80449d2b79800a8d3f36fd4b2c56a11840c365cff0ffa309991f844c77ccf909",
+      "end_ms": 54800,
+      "id": "cue-000022-80449d2b7980",
+      "original_index": "22",
+      "position": 22,
+      "settings": "",
+      "start_ms": 50800,
+      "text": "best to work with it. We're all learning",
+      "text_sha256": "cbc93985f97f4f000af89ebbd16ca81f235999254db6f872dbe9b7dafc182464",
+      "timing_line": "00:00:50,800 --> 00:00:54,800"
+    },
+    {
+      "cue_sha256": "e2ba660603151c36b777bc9427deef678f398b5b7614485bfcfa1ccb9a5fb21c",
+      "end_ms": 57600,
+      "id": "cue-000023-e2ba66060315",
+      "original_index": "23",
+      "position": 23,
+      "settings": "",
+      "start_ms": 52800,
+      "text": "together how to navigate this rapidly",
+      "text_sha256": "5205b5e658c339f6308918e3f1af1b0f5432ad4a47558d9b3b0aac20bab381cb",
+      "timing_line": "00:00:52,800 --> 00:00:57,600"
+    },
+    {
+      "cue_sha256": "d854c44b6a8ac9feee7dc5553b7808998fb2e1f8e7b5c04382f01d60b9c66f64",
+      "end_ms": 60000,
+      "id": "cue-000024-d854c44b6a8a",
+      "original_index": "24",
+      "position": 24,
+      "settings": "",
+      "start_ms": 54800,
+      "text": "evolving landscape. This course is about",
+      "text_sha256": "2c6cda42bc88bea62355ca223145888939f3346ebd011601a0c429b0ba2f04fc",
+      "timing_line": "00:00:54,800 --> 00:01:00,000"
+    },
+    {
+      "cue_sha256": "a686346dc68fe76c47eab14f2cd9d511c952b4715e8060822cff0208c1a07a34",
+      "end_ms": 63000,
+      "id": "cue-000025-a686346dc68f",
+      "original_index": "25",
+      "position": 25,
+      "settings": "",
+      "start_ms": 57600,
+      "text": "fundamentally shifting how we approach",
+      "text_sha256": "f95c5250c57df7b6233e543f1b0996f2776877cc639634c56385e67ee6b6cc34",
+      "timing_line": "00:00:57,600 --> 00:01:03,000"
+    },
+    {
+      "cue_sha256": "57ed99f0fb585f3d45edb90e6059c56499db3cfc051b69faef492f0a9aaef7ba",
+      "end_ms": 63000,
+      "id": "cue-000026-57ed99f0fb58",
+      "original_index": "26",
+      "position": 26,
+      "settings": "",
+      "start_ms": 60000,
+      "text": "AI.",
+      "text_sha256": "da8e5b3c13f6473c6d366132273be5040eb882fb6a42618d75da028d9dc42b1e",
+      "timing_line": "00:01:00,000 --> 00:01:03,000"
+    }
+  ],
+  "pipeline_version": "1.1",
+  "render_segment_ledger_sha256": "a7b47a4591d1cda67d6db0dd57a979155a943381b7fcce29cc6dab1cf1ced7fd",
+  "render_segments": [
+    {
+      "cue_ids": [
+        "cue-000001-bd8fa44a1657",
+        "cue-000002-e7f1ff74eed4"
+      ],
+      "end_ms": 6839,
+      "id": "seg-000001-06a6eed00f64",
+      "position": 1,
+      "source_sha256": "06a6eed00f6480a4ee19f6d903bdbfcf6935dd36d8a457c78a917c992e44a394",
+      "start_ms": 80
+    },
+    {
+      "cue_ids": [
+        "cue-000004-3d547bce0792"
+      ],
+      "end_ms": 9280,
+      "id": "seg-000002-03ef3a0094e3",
+      "position": 2,
+      "source_sha256": "03ef3a0094e32c6be31a4fe0451e9a19b2c9e3045d33b395df1a6aad346897e4",
+      "start_ms": 6839
+    },
+    {
+      "cue_ids": [
+        "cue-000005-5cde89d2605e"
+      ],
+      "end_ms": 16760,
+      "id": "seg-000003-e9e330176a47",
+      "position": 3,
+      "source_sha256": "e9e330176a472d219de0c6793b890ee7a4ca1dcab48b8b5cadeac80c9b546bdf",
+      "start_ms": 9280
+    },
+    {
+      "cue_ids": [
+        "cue-000007-8124ed67fb15"
+      ],
+      "end_ms": 19520,
+      "id": "seg-000004-f3e95997b178",
+      "position": 4,
+      "source_sha256": "f3e95997b178e4d5feb6f27d8183008e7f4bb753f3ef4038a47fe3913c9d81a7",
+      "start_ms": 16760
+    },
+    {
+      "cue_ids": [
+        "cue-000008-37daf9c2ef5a"
+      ],
+      "end_ms": 21600,
+      "id": "seg-000005-cd3a74e807d1",
+      "position": 5,
+      "source_sha256": "cd3a74e807d136a6279961beb9f48fd79ff59134057af9f80161bd715d111bc7",
+      "start_ms": 19520
+    },
+    {
+      "cue_ids": [
+        "cue-000009-f9e44cc9bb97"
+      ],
+      "end_ms": 23840,
+      "id": "seg-000006-bc4f01af9a18",
+      "position": 6,
+      "source_sha256": "bc4f01af9a180c1a0814c6f5e93cfbedc35ca2475d0d28d49952906e4d72dda4",
+      "start_ms": 21600
+    },
+    {
+      "cue_ids": [
+        "cue-000010-17c86e1376f9"
+      ],
+      "end_ms": 25600,
+      "id": "seg-000007-53a07644fd94",
+      "position": 7,
+      "source_sha256": "53a07644fd94d0d8dfd000ba2e396684c22f0069bd9915c22e5bd204b1887489",
+      "start_ms": 23840
+    },
+    {
+      "cue_ids": [
+        "cue-000011-218f5f5c3e71"
+      ],
+      "end_ms": 28400,
+      "id": "seg-000008-cab9862e39cb",
+      "position": 8,
+      "source_sha256": "cab9862e39cbc8ea285389db7634ce1c2b0b9abf50bfe599995fc228a3f0e041",
+      "start_ms": 25600
+    },
+    {
+      "cue_ids": [
+        "cue-000012-f844d419d7ed"
+      ],
+      "end_ms": 30560,
+      "id": "seg-000009-8c7759f2d312",
+      "position": 9,
+      "source_sha256": "8c7759f2d31218356bb88a67551669c602a442badd52a6fbec266cf200198118",
+      "start_ms": 28400
+    },
+    {
+      "cue_ids": [
+        "cue-000013-8ab64a45bf58"
+      ],
+      "end_ms": 32559,
+      "id": "seg-000010-2b4a87036ddb",
+      "position": 10,
+      "source_sha256": "2b4a87036ddb3b3d637e4b2e9b1d41b13a07c30df61ca9f0e67c5a70b457b701",
+      "start_ms": 30560
+    },
+    {
+      "cue_ids": [
+        "cue-000014-9aeeab87867b"
+      ],
+      "end_ms": 35440,
+      "id": "seg-000011-f7df7bee133e",
+      "position": 11,
+      "source_sha256": "f7df7bee133e7cf1faeed3f24c6381870635df14813057784a159189932f944b",
+      "start_ms": 32559
+    },
+    {
+      "cue_ids": [
+        "cue-000015-4562284dc3a9"
+      ],
+      "end_ms": 37600,
+      "id": "seg-000012-b34e6f67248a",
+      "position": 12,
+      "source_sha256": "b34e6f67248a96920d36026e7a3546255a488366652e285996312a38138ca377",
+      "start_ms": 35440
+    },
+    {
+      "cue_ids": [
+        "cue-000016-fd965b824810"
+      ],
+      "end_ms": 40079,
+      "id": "seg-000013-5d99960021a8",
+      "position": 13,
+      "source_sha256": "5d99960021a80ded29ff9aeac040fc31550d0ed3ecd8e8c08c711eab83586c85",
+      "start_ms": 37600
+    },
+    {
+      "cue_ids": [
+        "cue-000017-6988cbfafd46"
+      ],
+      "end_ms": 41920,
+      "id": "seg-000014-35013b6d5282",
+      "position": 14,
+      "source_sha256": "35013b6d5282461988b15e1433dabe68739d91744a0ab3bdf8bfcf881c96905d",
+      "start_ms": 40079
+    },
+    {
+      "cue_ids": [
+        "cue-000018-5e60678a9b73"
+      ],
+      "end_ms": 43760,
+      "id": "seg-000015-ca93946fb62e",
+      "position": 15,
+      "source_sha256": "ca93946fb62e225a80e2a3a237262c47ebce81594e1482f9a34a452b5db4b28f",
+      "start_ms": 41920
+    },
+    {
+      "cue_ids": [
+        "cue-000019-ece3bed30dda"
+      ],
+      "end_ms": 46320,
+      "id": "seg-000016-08c3c34da185",
+      "position": 16,
+      "source_sha256": "08c3c34da185766a05bb394e5c5d77f9039cf7d943d555ab2020eb7a811d8bd2",
+      "start_ms": 43760
+    },
+    {
+      "cue_ids": [
+        "cue-000020-f6b48daea4f5"
+      ],
+      "end_ms": 48399,
+      "id": "seg-000017-b67a1dbfcf5e",
+      "position": 17,
+      "source_sha256": "b67a1dbfcf5e32a03d0e034af4dd05084c436124ddc5e193406ad60976e40ffb",
+      "start_ms": 46320
+    },
+    {
+      "cue_ids": [
+        "cue-000021-f545f0790f9d"
+      ],
+      "end_ms": 50800,
+      "id": "seg-000018-23cf00585621",
+      "position": 18,
+      "source_sha256": "23cf00585621537482532e9d3e2650a3896a54e063508022301adc5c38a471bc",
+      "start_ms": 48399
+    },
+    {
+      "cue_ids": [
+        "cue-000022-80449d2b7980"
+      ],
+      "end_ms": 52800,
+      "id": "seg-000019-08bdbe9916f3",
+      "position": 19,
+      "source_sha256": "08bdbe9916f375b25b1a8a7590b660e91bdba91300ff8234c40f86a8c68d8644",
+      "start_ms": 50800
+    },
+    {
+      "cue_ids": [
+        "cue-000023-e2ba66060315"
+      ],
+      "end_ms": 54800,
+      "id": "seg-000020-dd185881aa13",
+      "position": 20,
+      "source_sha256": "dd185881aa139925e71913c6d1dcb6227ae71ccaa0068393fcbfbb4771b6523a",
+      "start_ms": 52800
+    },
+    {
+      "cue_ids": [
+        "cue-000024-d854c44b6a8a"
+      ],
+      "end_ms": 57600,
+      "id": "seg-000021-d9fd3066034e",
+      "position": 21,
+      "source_sha256": "d9fd3066034e7388b25703f6e144388780944d2c26728107495aa90aeee5ef83",
+      "start_ms": 54800
+    },
+    {
+      "cue_ids": [
+        "cue-000025-a686346dc68f"
+      ],
+      "end_ms": 60000,
+      "id": "seg-000022-4e90d55988e4",
+      "position": 22,
+      "source_sha256": "4e90d55988e4d048e8fbbe4d3d33cda01c71ea11ee629f668f03f7fa0e27c93e",
+      "start_ms": 57600
+    },
+    {
+      "cue_ids": [
+        "cue-000026-57ed99f0fb58"
+      ],
+      "end_ms": 63000,
+      "id": "seg-000023-5907c608acca",
+      "position": 23,
+      "source_sha256": "5907c608accadc134dcb83b84540451393fa70df7e45e47bae038e6a6d6614be",
+      "start_ms": 60000
+    }
+  ],
+  "schema_version": 1,
+  "segment_ledger_sha256": "d3ee88f4bef7b4b773469357403da95d0796eb6ede5f43e91796d64ee5f47715",
+  "segment_mode": "smart",
+  "segments": [
+    {
+      "cue_ids": [
+        "cue-000001-bd8fa44a1657"
+      ],
+      "end_ms": 2770,
+      "id": "seg-000001-b168457dcbeb",
+      "position": 1,
+      "source_sha256": "b168457dcbeb75eff3275b906d7238ed3a8dd3bc15b19fc3fcb869b5fd24b05b",
+      "start_ms": 80
+    },
+    {
+      "cue_ids": [
+        "cue-000002-e7f1ff74eed4"
+      ],
+      "end_ms": 6839,
+      "id": "seg-000002-625d87896b8c",
+      "position": 2,
+      "source_sha256": "625d87896b8c09dd0be0416c2946a387eadf8ccab9aaf213cbe08a90dc6fccca",
+      "start_ms": 2000
+    },
+    {
+      "cue_ids": [
+        "cue-000004-3d547bce0792"
+      ],
+      "end_ms": 12300,
+      "id": "seg-000003-03ef3a0094e3",
+      "position": 3,
+      "source_sha256": "03ef3a0094e32c6be31a4fe0451e9a19b2c9e3045d33b395df1a6aad346897e4",
+      "start_ms": 6839
+    },
+    {
+      "cue_ids": [
+        "cue-000005-5cde89d2605e"
+      ],
+      "end_ms": 16760,
+      "id": "seg-000004-e9e330176a47",
+      "position": 4,
+      "source_sha256": "e9e330176a472d219de0c6793b890ee7a4ca1dcab48b8b5cadeac80c9b546bdf",
+      "start_ms": 9280
+    },
+    {
+      "cue_ids": [
+        "cue-000007-8124ed67fb15"
+      ],
+      "end_ms": 21600,
+      "id": "seg-000005-f3e95997b178",
+      "position": 5,
+      "source_sha256": "f3e95997b178e4d5feb6f27d8183008e7f4bb753f3ef4038a47fe3913c9d81a7",
+      "start_ms": 16760
+    },
+    {
+      "cue_ids": [
+        "cue-000008-37daf9c2ef5a"
+      ],
+      "end_ms": 23840,
+      "id": "seg-000006-cd3a74e807d1",
+      "position": 6,
+      "source_sha256": "cd3a74e807d136a6279961beb9f48fd79ff59134057af9f80161bd715d111bc7",
+      "start_ms": 19520
+    },
+    {
+      "cue_ids": [
+        "cue-000009-f9e44cc9bb97"
+      ],
+      "end_ms": 25600,
+      "id": "seg-000007-bc4f01af9a18",
+      "position": 7,
+      "source_sha256": "bc4f01af9a180c1a0814c6f5e93cfbedc35ca2475d0d28d49952906e4d72dda4",
+      "start_ms": 21600
+    },
+    {
+      "cue_ids": [
+        "cue-000010-17c86e1376f9"
+      ],
+      "end_ms": 28400,
+      "id": "seg-000008-53a07644fd94",
+      "position": 8,
+      "source_sha256": "53a07644fd94d0d8dfd000ba2e396684c22f0069bd9915c22e5bd204b1887489",
+      "start_ms": 23840
+    },
+    {
+      "cue_ids": [
+        "cue-000011-218f5f5c3e71"
+      ],
+      "end_ms": 30560,
+      "id": "seg-000009-cab9862e39cb",
+      "position": 9,
+      "source_sha256": "cab9862e39cbc8ea285389db7634ce1c2b0b9abf50bfe599995fc228a3f0e041",
+      "start_ms": 25600
+    },
+    {
+      "cue_ids": [
+        "cue-000012-f844d419d7ed"
+      ],
+      "end_ms": 32559,
+      "id": "seg-000010-8c7759f2d312",
+      "position": 10,
+      "source_sha256": "8c7759f2d31218356bb88a67551669c602a442badd52a6fbec266cf200198118",
+      "start_ms": 28400
+    },
+    {
+      "cue_ids": [
+        "cue-000013-8ab64a45bf58"
+      ],
+      "end_ms": 35440,
+      "id": "seg-000011-2b4a87036ddb",
+      "position": 11,
+      "source_sha256": "2b4a87036ddb3b3d637e4b2e9b1d41b13a07c30df61ca9f0e67c5a70b457b701",
+      "start_ms": 30560
+    },
+    {
+      "cue_ids": [
+        "cue-000014-9aeeab87867b"
+      ],
+      "end_ms": 37600,
+      "id": "seg-000012-f7df7bee133e",
+      "position": 12,
+      "source_sha256": "f7df7bee133e7cf1faeed3f24c6381870635df14813057784a159189932f944b",
+      "start_ms": 32559
+    },
+    {
+      "cue_ids": [
+        "cue-000015-4562284dc3a9"
+      ],
+      "end_ms": 40079,
+      "id": "seg-000013-b34e6f67248a",
+      "position": 13,
+      "source_sha256": "b34e6f67248a96920d36026e7a3546255a488366652e285996312a38138ca377",
+      "start_ms": 35440
+    },
+    {
+      "cue_ids": [
+        "cue-000016-fd965b824810"
+      ],
+      "end_ms": 41920,
+      "id": "seg-000014-5d99960021a8",
+      "position": 14,
+      "source_sha256": "5d99960021a80ded29ff9aeac040fc31550d0ed3ecd8e8c08c711eab83586c85",
+      "start_ms": 37600
+    },
+    {
+      "cue_ids": [
+        "cue-000017-6988cbfafd46"
+      ],
+      "end_ms": 43760,
+      "id": "seg-000015-35013b6d5282",
+      "position": 15,
+      "source_sha256": "35013b6d5282461988b15e1433dabe68739d91744a0ab3bdf8bfcf881c96905d",
+      "start_ms": 40079
+    },
+    {
+      "cue_ids": [
+        "cue-000018-5e60678a9b73"
+      ],
+      "end_ms": 46320,
+      "id": "seg-000016-ca93946fb62e",
+      "position": 16,
+      "source_sha256": "ca93946fb62e225a80e2a3a237262c47ebce81594e1482f9a34a452b5db4b28f",
+      "start_ms": 41920
+    },
+    {
+      "cue_ids": [
+        "cue-000019-ece3bed30dda"
+      ],
+      "end_ms": 48399,
+      "id": "seg-000017-08c3c34da185",
+      "position": 17,
+      "source_sha256": "08c3c34da185766a05bb394e5c5d77f9039cf7d943d555ab2020eb7a811d8bd2",
+      "start_ms": 43760
+    },
+    {
+      "cue_ids": [
+        "cue-000020-f6b48daea4f5"
+      ],
+      "end_ms": 50800,
+      "id": "seg-000018-b67a1dbfcf5e",
+      "position": 18,
+      "source_sha256": "b67a1dbfcf5e32a03d0e034af4dd05084c436124ddc5e193406ad60976e40ffb",
+      "start_ms": 46320
+    },
+    {
+      "cue_ids": [
+        "cue-000021-f545f0790f9d"
+      ],
+      "end_ms": 52800,
+      "id": "seg-000019-23cf00585621",
+      "position": 19,
+      "source_sha256": "23cf00585621537482532e9d3e2650a3896a54e063508022301adc5c38a471bc",
+      "start_ms": 48399
+    },
+    {
+      "cue_ids": [
+        "cue-000022-80449d2b7980"
+      ],
+      "end_ms": 54800,
+      "id": "seg-000020-08bdbe9916f3",
+      "position": 20,
+      "source_sha256": "08bdbe9916f375b25b1a8a7590b660e91bdba91300ff8234c40f86a8c68d8644",
+      "start_ms": 50800
+    },
+    {
+      "cue_ids": [
+        "cue-000023-e2ba66060315"
+      ],
+      "end_ms": 57600,
+      "id": "seg-000021-dd185881aa13",
+      "position": 21,
+      "source_sha256": "dd185881aa139925e71913c6d1dcb6227ae71ccaa0068393fcbfbb4771b6523a",
+      "start_ms": 52800
+    },
+    {
+      "cue_ids": [
+        "cue-000024-d854c44b6a8a"
+      ],
+      "end_ms": 60000,
+      "id": "seg-000022-d9fd3066034e",
+      "position": 22,
+      "source_sha256": "d9fd3066034e7388b25703f6e144388780944d2c26728107495aa90aeee5ef83",
+      "start_ms": 54800
+    },
+    {
+      "cue_ids": [
+        "cue-000025-a686346dc68f"
+      ],
+      "end_ms": 63000,
+      "id": "seg-000023-4e90d55988e4",
+      "position": 23,
+      "source_sha256": "4e90d55988e4d048e8fbbe4d3d33cda01c71ea11ee629f668f03f7fa0e27c93e",
+      "start_ms": 57600
+    },
+    {
+      "cue_ids": [
+        "cue-000026-57ed99f0fb58"
+      ],
+      "end_ms": 63000,
+      "id": "seg-000024-5907c608acca",
+      "position": 24,
+      "source_sha256": "5907c608accadc134dcb83b84540451393fa70df7e45e47bae038e6a6d6614be",
+      "start_ms": 60000
+    }
+  ],
+  "source": {
+    "archive_path": "C:\\Users\\Administrator\\Documents\\ChatGPT\\New project\\jzsub_jobs\\-UN9sNqQ0t4\\subtitles\\source.original.srt",
+    "encoding": "utf-8",
+    "original_path": "C:\\Users\\Administrator\\Documents\\ChatGPT\\New project\\jzsub_jobs\\-UN9sNqQ0t4\\AI Fluency_ Framework & Foundations Course Trailer [-UN9sNqQ0t4].source-srt.en-orig.srt",
+    "sha256": "0b293d34c7b3a60b180be8343b0bcead4e10dad38aa4c15b3d0a8b4aaca39fa8",
+    "size_bytes": 1739
+  },
+  "source_language": "en-orig",
+  "source_ledger_sha256": "ac0d50510fdf0cdda4dc5e0ca626262cbfc489c21b8bc6854a09fa2cc4102f98",
+  "target_language": "zh-CN",
+  "translation_batches": [
+    {
+      "path": "C:\\Users\\Administrator\\Documents\\ChatGPT\\New project\\jzsub_jobs\\-UN9sNqQ0t4\\subtitles\\translation-input\\batch-0001.json",
+      "segment_ids": [
+        "seg-000001-b168457dcbeb",
+        "seg-000002-625d87896b8c",
+        "seg-000003-03ef3a0094e3",
+        "seg-000004-e9e330176a47",
+        "seg-000005-f3e95997b178",
+        "seg-000006-cd3a74e807d1",
+        "seg-000007-bc4f01af9a18",
+        "seg-000008-53a07644fd94",
+        "seg-000009-cab9862e39cb",
+        "seg-000010-8c7759f2d312",
+        "seg-000011-2b4a87036ddb",
+        "seg-000012-f7df7bee133e",
+        "seg-000013-b34e6f67248a",
+        "seg-000014-5d99960021a8",
+        "seg-000015-35013b6d5282",
+        "seg-000016-ca93946fb62e",
+        "seg-000017-08c3c34da185",
+        "seg-000018-b67a1dbfcf5e",
+        "seg-000019-23cf00585621",
+        "seg-000020-08bdbe9916f3",
+        "seg-000021-dd185881aa13",
+        "seg-000022-d9fd3066034e",
+        "seg-000023-4e90d55988e4",
+        "seg-000024-5907c608acca"
+      ],
+      "sha256": "4fb90baa0e25e08f6e7a28b97573b0da28613352d463bc7231710efd42094985"
+    }
+  ],
+  "translation_contract_version": 4,
+  "translation_output_dir": "C:\\Users\\Administrator\\Documents\\ChatGPT\\New project\\jzsub_jobs\\-UN9sNqQ0t4\\subtitles\\translation-output",
+  "video_size": {
+    "height": 360,
+    "width": 640
+  }
+}
